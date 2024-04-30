@@ -1,0 +1,50 @@
+{
+    "language":"pt", 
+    "intents":{
+        "recebi": {
+            "examples": [
+                "Recebi um pagamento por um trabalho freelance.",
+                "Obtive um bônus de final de ano.",
+                "Aceitei um PIX de um amigo.",
+                "Fui reembolsado por despesas de viagem.",
+                "Ganhei um prêmio em dinheiro em um concurso.",
+                "Arrecadei fundos através de uma vaquinha online.",
+                "Herdei uma quantia de um parente distante.",
+                "Cobrei uma dívida antiga.",
+                "Vendi meu carro usado.",
+                "Aluguei minha propriedade e recebi o primeiro pagamento.",
+                "Negociei meu salário e recebi o aumento.",
+                "Faturei com a venda de ações.",
+                "Recebi uma comissão por vendas.",
+                "Consegui uma bolsa de estudos.",
+                "Tive um retorno de investimento.",
+                "Recebi uma doação generosa para meu projeto."],
+            "responses": ["Regitramos seu recebimento", "Anotado sua entrada"]
+        },
+        "gastei": {
+            "examples": [
+                "Enviei 30.10 conto para o vinicius.",
+                "Eu despendi minha mesada com cartão de crédito.",
+                "Eu esgotei minha poupança em dinheiro vivo.",
+                "Eu investi em ações via transferência bancária.",
+                "Eu esbanjei no shopping com meu cartão de débito.",
+                "Eu dilapidei meu salário em parcelas.",
+                "Eu desfiz-me de minhas economias em cheque.",
+                "Eu despachei o dinheiro rapidamente por meio de um aplicativo de pagamento.",
+                "Eu dissipei minha fortuna com transferência eletrônica.",
+                "Eu esgotei minhas economias em dinheiro físico.",
+                "Eu despendi em viagens com cartão pré-pago.",
+                "Eu dissipei na balada com pagamento em espécie.",
+                "Eu desembolsei na loja utilizando pagamento por aproximação.",
+                "Eu esvaziei minha carteira com pagamento em notas.",
+                "Eu gastei no restaurante com cartão contactless.",
+                "Eu transferi para a conta dele via internet banking.",
+                "Eu despendi em gadgets com pagamento por QR code.",
+                "Eu dissipei em compras online com cartão virtual.",
+                "Eu esbanjei em roupas utilizando pagamento parcelado.",
+                "Eu dissipei na festa com pagamento em cheque.",
+                "Eu desembolsei no mercado com pagamento em dinheiro."],
+            "responses": ["Registramos seu gasto", "Anotado seu gasto!"]
+        }
+    }
+}

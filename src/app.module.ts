@@ -7,17 +7,20 @@ import { BookmarkModule } from './bookmark/bookmark.module';
 import { PrismaModule } from './prisma/prisma.module';
 import { ConfigModule } from '@nestjs/config';
 import { WhatsappModule } from './whatsapp/whatsapp.module';
+import { NlpModule } from './nlp/nlp.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
-      isGlobal: true
+      isGlobal: true,
     }),
     AuthModule,
     UserModule,
     BookmarkModule,
     PrismaModule,
-    WhatsappModule],
+    WhatsappModule,
+    NlpModule,
+  ],
 
   controllers: [AppController],
   providers: [AppService],

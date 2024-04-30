@@ -1,0 +1,724 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "pt"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "locale": "pt",
+          "trainByDomain": false,
+          "tag": "domain-manager-pt",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "freelanc,pagament,por,receb,trabalh,um": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "ano,bonus,de,final,obtiv,um": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "aceit,amig,de,pix,um": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "de,despes,fui,por,reembols,viag": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "concurs,dinheir,em,ganh,premi,um": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "arrecad,atrav,de,fund,onlin,uma,vaquinh": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "de,distant,herd,parent,quant,um,uma": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "antig,cobr,div,uma": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "carr,meu,usad,vend": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "alugu,e,minh,o,pagament,primeir,propriedad,receb": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "aument,e,meu,negoc,o,receb,salari": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "a,aco,com,de,fatur,vend": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "comissa,por,receb,uma,vend": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "bols,consegu,de,estud,uma": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "de,invest,retorn,tiv,um": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "doaca,gener,meu,par,projet,receb,uma": {
+            "intent": "recebi",
+            "domain": "default"
+          },
+          "10,30,cont,envi,o,par,vinicius": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "carta,com,credit,de,despend,eu,mes,minh": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "dinheir,em,esgot,eu,minh,poupanc,viv": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "aco,banc,em,eu,invest,transferenc,via": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "carta,com,de,debit,esbanj,eu,meu,no,shopping": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "dilapid,em,eu,meu,parcel,salari": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "chequ,de,desfiz,econom,em,eu,me,minh": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "aplic,de,despach,dinheir,eu,mei,o,pagament,por,rapid,um": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "com,dissip,eletron,eu,fortun,minh,transferenc": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "dinheir,econom,em,esgot,eu,fisic,minh": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "carta,com,despend,em,eu,pag,pre,viagens": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "bal,com,dissip,em,espec,eu,na,pagament": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "aproximaca,desembols,eu,loj,na,pagament,por,utiliz": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "carteir,com,em,esvazi,eu,minh,not,pagament": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "carta,com,contactless,eu,gast,no,restaur": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "a,banking,cont,del,eu,internet,par,transfer,via": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "cod,com,despend,em,eu,gadgets,pagament,por,qr": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "carta,com,compr,dissip,em,eu,onlin,virtual": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "em,esbanj,eu,pagament,parcel,roup,utiliz": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "chequ,com,dissip,em,eu,fest,na,pagament": {
+            "intent": "gastei",
+            "domain": "default"
+          },
+          "com,desembols,dinheir,em,eu,merc,no,pagament": {
+            "intent": "gastei",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "recebi": "default",
+          "gastei": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Recebi um pagamento por um trabalho freelance.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Obtive um bônus de final de ano.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Aceitei um PIX de um amigo.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Fui reembolsado por despesas de viagem.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Ganhei um prêmio em dinheiro em um concurso.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Arrecadei fundos através de uma vaquinha online.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Herdei uma quantia de um parente distante.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Cobrei uma dívida antiga.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Vendi meu carro usado.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Aluguei minha propriedade e recebi o primeiro pagamento.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Negociei meu salário e recebi o aumento.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Faturei com a venda de ações.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Recebi uma comissão por vendas.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Consegui uma bolsa de estudos.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tive um retorno de investimento.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Recebi uma doação generosa para meu projeto.",
+            "intent": "recebi"
+          },
+          {
+            "domain": "default",
+            "utterance": "Enviei 30.10 conto para o vinicius.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu despendi minha mesada com cartão de crédito.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu esgotei minha poupança em dinheiro vivo.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu investi em ações via transferência bancária.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu esbanjei no shopping com meu cartão de débito.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu dilapidei meu salário em parcelas.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu desfiz-me de minhas economias em cheque.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu despachei o dinheiro rapidamente por meio de um aplicativo de pagamento.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu dissipei minha fortuna com transferência eletrônica.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu esgotei minhas economias em dinheiro físico.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu despendi em viagens com cartão pré-pago.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu dissipei na balada com pagamento em espécie.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu desembolsei na loja utilizando pagamento por aproximação.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu esvaziei minha carteira com pagamento em notas.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu gastei no restaurante com cartão contactless.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu transferi para a conta dele via internet banking.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu despendi em gadgets com pagamento por QR code.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu dissipei em compras online com cartão virtual.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu esbanjei em roupas utilizando pagamento parcelado.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu dissipei na festa com pagamento em cheque.",
+            "intent": "gastei"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eu desembolsei no mercado com pagamento em dinheiro.",
+            "intent": "gastei"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "pt",
+              "tag": "nlu-pt",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "10": 1,
+              "30": 1,
+              "receb": 1,
+              "um": 1,
+              "pagament": 1,
+              "por": 1,
+              "trabalh": 1,
+              "freelanc": 1,
+              "obtiv": 1,
+              "bonus": 1,
+              "de": 1,
+              "final": 1,
+              "ano": 1,
+              "aceit": 1,
+              "pix": 1,
+              "amig": 1,
+              "fui": 1,
+              "reembols": 1,
+              "despes": 1,
+              "viag": 1,
+              "ganh": 1,
+              "premi": 1,
+              "em": 1,
+              "dinheir": 1,
+              "concurs": 1,
+              "arrecad": 1,
+              "fund": 1,
+              "atrav": 1,
+              "uma": 1,
+              "vaquinh": 1,
+              "onlin": 1,
+              "herd": 1,
+              "quant": 1,
+              "parent": 1,
+              "distant": 1,
+              "cobr": 1,
+              "div": 1,
+              "antig": 1,
+              "vend": 1,
+              "meu": 1,
+              "carr": 1,
+              "usad": 1,
+              "alugu": 1,
+              "minh": 1,
+              "propriedad": 1,
+              "e": 1,
+              "o": 1,
+              "primeir": 1,
+              "negoc": 1,
+              "salari": 1,
+              "aument": 1,
+              "fatur": 1,
+              "com": 1,
+              "a": 1,
+              "aco": 1,
+              "comissa": 1,
+              "consegu": 1,
+              "bols": 1,
+              "estud": 1,
+              "tiv": 1,
+              "retorn": 1,
+              "invest": 1,
+              "doaca": 1,
+              "gener": 1,
+              "par": 1,
+              "projet": 1,
+              "envi": 1,
+              "cont": 1,
+              "vinicius": 1,
+              "eu": 1,
+              "despend": 1,
+              "mes": 1,
+              "carta": 1,
+              "credit": 1,
+              "esgot": 1,
+              "poupanc": 1,
+              "viv": 1,
+              "via": 1,
+              "transferenc": 1,
+              "banc": 1,
+              "esbanj": 1,
+              "no": 1,
+              "shopping": 1,
+              "debit": 1,
+              "dilapid": 1,
+              "parcel": 1,
+              "desfiz": 1,
+              "me": 1,
+              "econom": 1,
+              "chequ": 1,
+              "despach": 1,
+              "rapid": 1,
+              "mei": 1,
+              "aplic": 1,
+              "dissip": 1,
+              "fortun": 1,
+              "eletron": 1,
+              "fisic": 1,
+              "viagens": 1,
+              "pre": 1,
+              "pag": 1,
+              "na": 1,
+              "bal": 1,
+              "espec": 1,
+              "desembols": 1,
+              "loj": 1,
+              "utiliz": 1,
+              "aproximaca": 1,
+              "esvazi": 1,
+              "carteir": 1,
+              "not": 1,
+              "gast": 1,
+              "restaur": 1,
+              "contactless": 1,
+              "transfer": 1,
+              "del": 1,
+              "internet": 1,
+              "banking": 1,
+              "gadgets": 1,
+              "qr": 1,
+              "cod": 1,
+              "compr": 1,
+              "virtual": 1,
+              "roup": 1,
+              "fest": 1,
+              "merc": 1
+            },
+            "intents": {
+              "recebi": 1,
+              "gastei": 1
+            },
+            "intentFeatures": {
+              "recebi": {
+                "receb": 1,
+                "um": 1,
+                "pagament": 1,
+                "por": 1,
+                "trabalh": 1,
+                "freelanc": 1,
+                "obtiv": 1,
+                "bonus": 1,
+                "de": 1,
+                "final": 1,
+                "ano": 1,
+                "aceit": 1,
+                "pix": 1,
+                "amig": 1,
+                "fui": 1,
+                "reembols": 1,
+                "despes": 1,
+                "viag": 1,
+                "ganh": 1,
+                "premi": 1,
+                "em": 1,
+                "dinheir": 1,
+                "concurs": 1,
+                "arrecad": 1,
+                "fund": 1,
+                "atrav": 1,
+                "uma": 1,
+                "vaquinh": 1,
+                "onlin": 1,
+                "herd": 1,
+                "quant": 1,
+                "parent": 1,
+                "distant": 1,
+                "cobr": 1,
+                "div": 1,
+                "antig": 1,
+                "vend": 1,
+                "meu": 1,
+                "carr": 1,
+                "usad": 1,
+                "alugu": 1,
+                "minh": 1,
+                "propriedad": 1,
+                "e": 1,
+                "o": 1,
+                "primeir": 1,
+                "negoc": 1,
+                "salari": 1,
+                "aument": 1,
+                "fatur": 1,
+                "com": 1,
+                "a": 1,
+                "aco": 1,
+                "comissa": 1,
+                "consegu": 1,
+                "bols": 1,
+                "estud": 1,
+                "tiv": 1,
+                "retorn": 1,
+                "invest": 1,
+                "doaca": 1,
+                "gener": 1,
+                "par": 1,
+                "projet": 1
+              },
+              "gastei": {
+                "10": 1,
+                "30": 1,
+                "envi": 1,
+                "cont": 1,
+                "par": 1,
+                "o": 1,
+                "vinicius": 1,
+                "eu": 1,
+                "despend": 1,
+                "minh": 1,
+                "mes": 1,
+                "com": 1,
+                "carta": 1,
+                "de": 1,
+                "credit": 1,
+                "esgot": 1,
+                "poupanc": 1,
+                "em": 1,
+                "dinheir": 1,
+                "viv": 1,
+                "invest": 1,
+                "aco": 1,
+                "via": 1,
+                "transferenc": 1,
+                "banc": 1,
+                "esbanj": 1,
+                "no": 1,
+                "shopping": 1,
+                "meu": 1,
+                "debit": 1,
+                "dilapid": 1,
+                "salari": 1,
+                "parcel": 1,
+                "desfiz": 1,
+                "me": 1,
+                "econom": 1,
+                "chequ": 1,
+                "despach": 1,
+                "rapid": 1,
+                "por": 1,
+                "mei": 1,
+                "um": 1,
+                "aplic": 1,
+                "pagament": 1,
+                "dissip": 1,
+                "fortun": 1,
+                "eletron": 1,
+                "fisic": 1,
+                "viagens": 1,
+                "pre": 1,
+                "pag": 1,
+                "na": 1,
+                "bal": 1,
+                "espec": 1,
+                "desembols": 1,
+                "loj": 1,
+                "utiliz": 1,
+                "aproximaca": 1,
+                "esvazi": 1,
+                "carteir": 1,
+                "not": 1,
+                "gast": 1,
+                "restaur": 1,
+                "contactless": 1,
+                "transfer": 1,
+                "a": 1,
+                "del": 1,
+                "internet": 1,
+                "banking": 1,
+                "gadgets": 1,
+                "qr": 1,
+                "cod": 1,
+                "compr": 1,
+                "onlin": 1,
+                "virtual": 1,
+                "roup": 1,
+                "fest": 1,
+                "merc": 1
+              }
+            },
+            "featuresToIntent": {
+              "10": [
+                "gastei"
+              ],
+              "30": [
+                "gastei"
+              ],
+              "receb": [
+                "recebi"
+              ],
+              "um": [
+                "recebi",
+                "gastei"
+              ],
+              "pagament": [
+                "recebi",
+                "gastei"
+              ],
+              "por": [
+                "recebi",
+                "gastei"
+              ],
+              "trabalh": [
+                "recebi"
+              ],
+              "freelanc": [
+                "recebi"
+              ],
+              "obtiv": [
+                "recebi"
+              ],
+              "bonus": [
+                "recebi"
+              ],
+              "de": [
+                "recebi",
+                "gastei"
+              ],
+              "final": [
+                "recebi"
+              ],
+              "ano": [
+                "recebi"
+              ],
+              "aceit": [
+                "recebi"
+              ],
+              "pix": [
+                "recebi"
+              ],
+              "amig": [
+                "recebi"
+              ],
+   
