@@ -721,4 +721,948 @@
               "amig": [
                 "recebi"
               ],
-   
+              "fui": [
+                "recebi"
+              ],
+              "reembols": [
+                "recebi"
+              ],
+              "despes": [
+                "recebi"
+              ],
+              "viag": [
+                "recebi"
+              ],
+              "ganh": [
+                "recebi"
+              ],
+              "premi": [
+                "recebi"
+              ],
+              "em": [
+                "recebi",
+                "gastei"
+              ],
+              "dinheir": [
+                "recebi",
+                "gastei"
+              ],
+              "concurs": [
+                "recebi"
+              ],
+              "arrecad": [
+                "recebi"
+              ],
+              "fund": [
+                "recebi"
+              ],
+              "atrav": [
+                "recebi"
+              ],
+              "uma": [
+                "recebi"
+              ],
+              "vaquinh": [
+                "recebi"
+              ],
+              "onlin": [
+                "recebi",
+                "gastei"
+              ],
+              "herd": [
+                "recebi"
+              ],
+              "quant": [
+                "recebi"
+              ],
+              "parent": [
+                "recebi"
+              ],
+              "distant": [
+                "recebi"
+              ],
+              "cobr": [
+                "recebi"
+              ],
+              "div": [
+                "recebi"
+              ],
+              "antig": [
+                "recebi"
+              ],
+              "vend": [
+                "recebi"
+              ],
+              "meu": [
+                "recebi",
+                "gastei"
+              ],
+              "carr": [
+                "recebi"
+              ],
+              "usad": [
+                "recebi"
+              ],
+              "alugu": [
+                "recebi"
+              ],
+              "minh": [
+                "recebi",
+                "gastei"
+              ],
+              "propriedad": [
+                "recebi"
+              ],
+              "e": [
+                "recebi"
+              ],
+              "o": [
+                "recebi",
+                "gastei"
+              ],
+              "primeir": [
+                "recebi"
+              ],
+              "negoc": [
+                "recebi"
+              ],
+              "salari": [
+                "recebi",
+                "gastei"
+              ],
+              "aument": [
+                "recebi"
+              ],
+              "fatur": [
+                "recebi"
+              ],
+              "com": [
+                "recebi",
+                "gastei"
+              ],
+              "a": [
+                "recebi",
+                "gastei"
+              ],
+              "aco": [
+                "recebi",
+                "gastei"
+              ],
+              "comissa": [
+                "recebi"
+              ],
+              "consegu": [
+                "recebi"
+              ],
+              "bols": [
+                "recebi"
+              ],
+              "estud": [
+                "recebi"
+              ],
+              "tiv": [
+                "recebi"
+              ],
+              "retorn": [
+                "recebi"
+              ],
+              "invest": [
+                "recebi",
+                "gastei"
+              ],
+              "doaca": [
+                "recebi"
+              ],
+              "gener": [
+                "recebi"
+              ],
+              "par": [
+                "recebi",
+                "gastei"
+              ],
+              "projet": [
+                "recebi"
+              ],
+              "envi": [
+                "gastei"
+              ],
+              "cont": [
+                "gastei"
+              ],
+              "vinicius": [
+                "gastei"
+              ],
+              "eu": [
+                "gastei"
+              ],
+              "despend": [
+                "gastei"
+              ],
+              "mes": [
+                "gastei"
+              ],
+              "carta": [
+                "gastei"
+              ],
+              "credit": [
+                "gastei"
+              ],
+              "esgot": [
+                "gastei"
+              ],
+              "poupanc": [
+                "gastei"
+              ],
+              "viv": [
+                "gastei"
+              ],
+              "via": [
+                "gastei"
+              ],
+              "transferenc": [
+                "gastei"
+              ],
+              "banc": [
+                "gastei"
+              ],
+              "esbanj": [
+                "gastei"
+              ],
+              "no": [
+                "gastei"
+              ],
+              "shopping": [
+                "gastei"
+              ],
+              "debit": [
+                "gastei"
+              ],
+              "dilapid": [
+                "gastei"
+              ],
+              "parcel": [
+                "gastei"
+              ],
+              "desfiz": [
+                "gastei"
+              ],
+              "me": [
+                "gastei"
+              ],
+              "econom": [
+                "gastei"
+              ],
+              "chequ": [
+                "gastei"
+              ],
+              "despach": [
+                "gastei"
+              ],
+              "rapid": [
+                "gastei"
+              ],
+              "mei": [
+                "gastei"
+              ],
+              "aplic": [
+                "gastei"
+              ],
+              "dissip": [
+                "gastei"
+              ],
+              "fortun": [
+                "gastei"
+              ],
+              "eletron": [
+                "gastei"
+              ],
+              "fisic": [
+                "gastei"
+              ],
+              "viagens": [
+                "gastei"
+              ],
+              "pre": [
+                "gastei"
+              ],
+              "pag": [
+                "gastei"
+              ],
+              "na": [
+                "gastei"
+              ],
+              "bal": [
+                "gastei"
+              ],
+              "espec": [
+                "gastei"
+              ],
+              "desembols": [
+                "gastei"
+              ],
+              "loj": [
+                "gastei"
+              ],
+              "utiliz": [
+                "gastei"
+              ],
+              "aproximaca": [
+                "gastei"
+              ],
+              "esvazi": [
+                "gastei"
+              ],
+              "carteir": [
+                "gastei"
+              ],
+              "not": [
+                "gastei"
+              ],
+              "gast": [
+                "gastei"
+              ],
+              "restaur": [
+                "gastei"
+              ],
+              "contactless": [
+                "gastei"
+              ],
+              "transfer": [
+                "gastei"
+              ],
+              "del": [
+                "gastei"
+              ],
+              "internet": [
+                "gastei"
+              ],
+              "banking": [
+                "gastei"
+              ],
+              "gadgets": [
+                "gastei"
+              ],
+              "qr": [
+                "gastei"
+              ],
+              "cod": [
+                "gastei"
+              ],
+              "compr": [
+                "gastei"
+              ],
+              "virtual": [
+                "gastei"
+              ],
+              "roup": [
+                "gastei"
+              ],
+              "fest": [
+                "gastei"
+              ],
+              "merc": [
+                "gastei"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "pt",
+                "tag": "nlu-pt",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "receb",
+                "um",
+                "pagament",
+                "por",
+                "trabalh",
+                "freelanc",
+                "obtiv",
+                "bonus",
+                "de",
+                "final",
+                "ano",
+                "aceit",
+                "pix",
+                "amig",
+                "fui",
+                "reembols",
+                "despes",
+                "viag",
+                "ganh",
+                "premi",
+                "em",
+                "dinheir",
+                "concurs",
+                "arrecad",
+                "fund",
+                "atrav",
+                "uma",
+                "vaquinh",
+                "onlin",
+                "herd",
+                "quant",
+                "parent",
+                "distant",
+                "cobr",
+                "div",
+                "antig",
+                "vend",
+                "meu",
+                "carr",
+                "usad",
+                "alugu",
+                "minh",
+                "propriedad",
+                "e",
+                "o",
+                "primeir",
+                "negoc",
+                "salari",
+                "aument",
+                "fatur",
+                "com",
+                "a",
+                "aco",
+                "comissa",
+                "consegu",
+                "bols",
+                "estud",
+                "tiv",
+                "retorn",
+                "invest",
+                "doaca",
+                "gener",
+                "par",
+                "projet",
+                "10",
+                "30",
+                "envi",
+                "cont",
+                "vinicius",
+                "eu",
+                "despend",
+                "mes",
+                "carta",
+                "credit",
+                "esgot",
+                "poupanc",
+                "viv",
+                "via",
+                "transferenc",
+                "banc",
+                "esbanj",
+                "no",
+                "shopping",
+                "debit",
+                "dilapid",
+                "parcel",
+                "desfiz",
+                "me",
+                "econom",
+                "chequ",
+                "despach",
+                "rapid",
+                "mei",
+                "aplic",
+                "dissip",
+                "fortun",
+                "eletron",
+                "fisic",
+                "viagens",
+                "pre",
+                "pag",
+                "na",
+                "bal",
+                "espec",
+                "desembols",
+                "loj",
+                "utiliz",
+                "aproximaca",
+                "esvazi",
+                "carteir",
+                "not",
+                "gast",
+                "restaur",
+                "contactless",
+                "transfer",
+                "del",
+                "internet",
+                "banking",
+                "gadgets",
+                "qr",
+                "cod",
+                "compr",
+                "virtual",
+                "roup",
+                "fest",
+                "merc"
+              ],
+              "intents": [
+                "recebi",
+                "gastei"
+              ],
+              "perceptrons": [
+                [
+                  3.2910144329071045,
+                  3.6547770500183105,
+                  0.4008595943450928,
+                  0.09493859112262726,
+                  0.8652549982070923,
+                  0.8652549982070923,
+                  0.6928437352180481,
+                  0.6928437352180481,
+                  2.8432843685150146,
+                  0.6928437352180481,
+                  0.6928437352180481,
+                  0.9877749681472778,
+                  0.9877749681472778,
+                  0.9877749681472778,
+                  1.6158199310302734,
+                  1.6158199310302734,
+                  1.6158199310302734,
+                  1.6158199310302734,
+                  2.0509462356567383,
+                  2.0509462356567383,
+                  -0.03173324093222618,
+                  -0.2775516211986542,
+                  2.0509462356567383,
+                  0.5929078459739685,
+                  0.5929078459739685,
+                  0.5929078459739685,
+                  3.4647512435913086,
+                  0.5929078459739685,
+                  0.5929078459739685,
+                  -0.15904255211353302,
+                  -0.15904255211353302,
+                  -0.15904255211353302,
+                  -0.15904255211353302,
+                  2.0018460750579834,
+                  2.0018460750579834,
+                  2.0018460750579834,
+                  3.131873846054077,
+                  1.9569743871688843,
+                  2.1313846111297607,
+                  2.1313846111297607,
+                  1.4759001731872559,
+                  -0.6140618324279785,
+                  1.4759001731872559,
+                  2.4159321784973145,
+                  -0.49796727299690247,
+                  1.4759001731872559,
+                  0.9450615644454956,
+                  0.3107997179031372,
+                  0.9450615644454956,
+                  1.443776249885559,
+                  -0.48980912566185,
+                  1.443776249885559,
+                  1.074411153793335,
+                  -0.42921334505081177,
+                  1.0434390306472778,
+                  1.0434390306472778,
+                  1.0434390306472778,
+                  1.0978652238845825,
+                  1.0978652238845825,
+                  0.7282554507255554,
+                  0.42750653624534607,
+                  0.42750653624534607,
+                  -0.5956203937530518,
+                  0.42750653624534607,
+                  -0.8029142618179321,
+                  -0.8029142618179321,
+                  -0.8029142618179321,
+                  -0.8029142618179321,
+                  -0.8029142618179321,
+                  -5.964343070983887,
+                  -0.730392575263977,
+                  -0.730392575263977,
+                  -1.6584537029266357,
+                  -0.730392575263977,
+                  -0.2203303575515747,
+                  -0.2203303575515747,
+                  -0.2203303575515747,
+                  -0.27317970991134644,
+                  -0.27317970991134644,
+                  -0.27317970991134644,
+                  -0.6422891616821289,
+                  -0.6422891616821289,
+                  -0.6422891616821289,
+                  -0.6422891616821289,
+                  -0.6164013147354126,
+                  -0.6164013147354126,
+                  -0.43592071533203125,
+                  -0.43592071533203125,
+                  -0.43592071533203125,
+                  -0.43592071533203125,
+                  -1.673577904701233,
+                  -1.673577904701233,
+                  -1.673577904701233,
+                  -1.673577904701233,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.048034656792879105,
+                  0,
+                  0,
+                  -0.048034656792879105,
+                  -0.048034656792879105,
+                  -0.048034656792879105,
+                  -0.048034656792879105,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  4.882698185739209
+                ],
+                [
+                  -2.0384950637817383,
+                  -1.6181432008743286,
+                  0.5728276371955872,
+                  0.9731302261352539,
+                  -0.2989473342895508,
+                  -0.2989473342895508,
+                  -0.34713014960289,
+                  -0.34713014960289,
+                  -0.5881157517433167,
+                  -0.34713014960289,
+                  -0.34713014960289,
+                  -0.3322625756263733,
+                  -0.3322625756263733,
+                  -0.3322625756263733,
+                  -0.5406816601753235,
+                  -0.5406816601753235,
+                  -0.5406816601753235,
+                  -0.5406816601753235,
+                  -0.8574080467224121,
+                  -0.8574080467224121,
+                  2.1550519466400146,
+                  0.39169031381607056,
+                  -0.8574080467224121,
+                  -0.2518880069255829,
+                  -0.2518880069255829,
+                  -0.2518880069255829,
+                  -1.1501381397247314,
+                  -0.2518880069255829,
+                  -0.2704511880874634,
+                  -0.0944870337843895,
+                  -0.0944870337843895,
+                  -0.0944870337843895,
+                  -0.0944870337843895,
+                  -0.1584266722202301,
+                  -0.1584266722202301,
+                  -0.1584266722202301,
+                  -1.253517508506775,
+                  0.4509302079677582,
+                  -0.42984268069267273,
+                  -0.42984268069267273,
+                  -0.7191414833068848,
+                  1.505282998085022,
+                  -0.7191414833068848,
+                  -1.3321001529693604,
+                  1.5632944107055664,
+                  -0.7191414833068848,
+                  -0.4899113178253174,
+                  0.6392767429351807,
+                  -0.4899113178253174,
+                  -0.7095631957054138,
+                  1.2581701278686523,
+                  -0.5335288643836975,
+                  -0.09552209824323654,
+                  0,
+                  -0.13963326811790466,
+                  -0.13963326811790466,
+                  -0.13963326811790466,
+                  -0.18273396790027618,
+                  -0.18273396790027618,
+                  0.5038082599639893,
+                  -0.23994576930999756,
+                  -0.23994576930999756,
+                  1.8917999267578125,
+                  -0.23994576930999756,
+                  1.880133867263794,
+                  1.880133867263794,
+                  1.880133867263794,
+                  2.1603338718414307,
+                  1.880133867263794,
+                  7.53073787689209,
+                  0.538397490978241,
+                  0.45881155133247375,
+                  1.7496616840362549,
+                  0.45881155133247375,
+                  0.5738728046417236,
+                  0.47882217168807983,
+                  0.47882217168807983,
+                  1.0042765140533447,
+                  1.2425765991210938,
+                  0.7210838198661804,
+                  0.6193605065345764,
+                  0.8756787180900574,
+                  0.5850025415420532,
+                  0.5850025415420532,
+                  1.1769403219223022,
+                  1.2152633666992188,
+                  0.6806718111038208,
+                  0.6806718111038208,
+                  0.7880985736846924,
+                  0.40335899591445923,
+                  1.069183111190796,
+                  1.069183111190796,
+                  1.069183111190796,
+                  1.069183111190796,
+                  0.554201602935791,
+                  0.5308299660682678,
+                  0.5308299660682678,
+                  0.10381246358156204,
+                  0.008062551729381084,
+                  0.008062551729381084,
+                  0.008062551729381084,
+                  0.83882075548172,
+                  0.22272774577140808,
+                  0.22272774577140808,
+                  0.5789849162101746,
+                  0.9133833646774292,
+                  0.9514445066452026,
+                  0.9133833646774292,
+                  0.10349264740943909,
+                  0.10349264740943909,
+                  0.10349264740943909,
+                  0.6241570115089417,
+                  0.6241570115089417,
+                  0.6241570115089417,
+                  0.28354617953300476,
+                  0.28354617953300476,
+                  0.28354617953300476,
+                  0.28354617953300476,
+                  0.07992402464151382,
+                  0.07992402464151382,
+                  0.07992402464151382,
+                  0.08224610984325409,
+                  0.08224610984325409,
+                  0.038159649819135666,
+                  -0.27454033493995667,
+                  -0.33322805166244507,
+                  1.187060324246957
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "pt",
+        "Recebi um pagamento por um trabalho freelance."
+      ],
+      [
+        "pt",
+        "Obtive um bônus de final de ano."
+      ],
+      [
+        "pt",
+        "Aceitei um PIX de um amigo."
+      ],
+      [
+        "pt",
+        "Fui reembolsado por despesas de viagem."
+      ],
+      [
+        "pt",
+        "Ganhei um prêmio em dinheiro em um concurso."
+      ],
+      [
+        "pt",
+        "Arrecadei fundos através de uma vaquinha online."
+      ],
+      [
+        "pt",
+        "Herdei uma quantia de um parente distante."
+      ],
+      [
+        "pt",
+        "Cobrei uma dívida antiga."
+      ],
+      [
+        "pt",
+        "Vendi meu carro usado."
+      ],
+      [
+        "pt",
+        "Aluguei minha propriedade e recebi o primeiro pagamento."
+      ],
+      [
+        "pt",
+        "Negociei meu salário e recebi o aumento."
+      ],
+      [
+        "pt",
+        "Faturei com a venda de ações."
+      ],
+      [
+        "pt",
+        "Recebi uma comissão por vendas."
+      ],
+      [
+        "pt",
+        "Consegui uma bolsa de estudos."
+      ],
+      [
+        "pt",
+        "Tive um retorno de investimento."
+      ],
+      [
+        "pt",
+        "Recebi uma doação generosa para meu projeto."
+      ],
+      [
+        "pt",
+        "Enviei 30.10 conto para o vinicius."
+      ],
+      [
+        "pt",
+        "Eu despendi minha mesada com cartão de crédito."
+      ],
+      [
+        "pt",
+        "Eu esgotei minha poupança em dinheiro vivo."
+      ],
+      [
+        "pt",
+        "Eu investi em ações via transferência bancária."
+      ],
+      [
+        "pt",
+        "Eu esbanjei no shopping com meu cartão de débito."
+      ],
+      [
+        "pt",
+        "Eu dilapidei meu salário em parcelas."
+      ],
+      [
+        "pt",
+        "Eu desfiz-me de minhas economias em cheque."
+      ],
+      [
+        "pt",
+        "Eu despachei o dinheiro rapidamente por meio de um aplicativo de pagamento."
+      ],
+      [
+        "pt",
+        "Eu dissipei minha fortuna com transferência eletrônica."
+      ],
+      [
+        "pt",
+        "Eu esgotei minhas economias em dinheiro físico."
+      ],
+      [
+        "pt",
+        "Eu despendi em viagens com cartão pré-pago."
+      ],
+      [
+        "pt",
+        "Eu dissipei na balada com pagamento em espécie."
+      ],
+      [
+        "pt",
+        "Eu desembolsei na loja utilizando pagamento por aproximação."
+      ],
+      [
+        "pt",
+        "Eu esvaziei minha carteira com pagamento em notas."
+      ],
+      [
+        "pt",
+        "Eu gastei no restaurante com cartão contactless."
+      ],
+      [
+        "pt",
+        "Eu transferi para a conta dele via internet banking."
+      ],
+      [
+        "pt",
+        "Eu despendi em gadgets com pagamento por QR code."
+      ],
+      [
+        "pt",
+        "Eu dissipei em compras online com cartão virtual."
+      ],
+      [
+        "pt",
+        "Eu esbanjei em roupas utilizando pagamento parcelado."
+      ],
+      [
+        "pt",
+        "Eu dissipei na festa com pagamento em cheque."
+      ],
+      [
+        "pt",
+        "Eu desembolsei no mercado com pagamento em dinheiro."
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "pt": {
+        "recebi": [
+          {
+            "answer": "Regitramos seu recebimento"
+          },
+          {
+            "answer": "Anotado sua entrada"
+          }
+        ],
+        "gastei": [
+          {
+            "answer": "Registramos seu gasto"
+          },
+          {
+            "answer": "Anotado seu gasto!"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
