@@ -1,8 +1,10 @@
 import { Controller, Get, Post, Req, Res } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 import { Request, Response } from 'express';
 
 import { WhatsappService } from './whatsapp.service';
 
+@ApiTags('Whatsapp endpoints')
 @Controller('whatsapp')
 export class WhatsappController {
   constructor(
