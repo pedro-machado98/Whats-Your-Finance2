@@ -2,6 +2,7 @@ import { Injectable, OnModuleInit } from '@nestjs/common';
 import { NlpManager } from 'node-nlp';
 
 import configActionsManager from './config/configActions.json';
+import categoryActionsManager from './config/configCategorias.json'
 
 @Injectable()
 export class NlpService implements OnModuleInit {
@@ -43,9 +44,8 @@ export class NlpService implements OnModuleInit {
   }
 
   async init() {
-    const actions = this.setUpManager(
-      configActionsManager,
-    );
+    const actions = this.setUpManager(configActionsManager);
+    const categories = this.setUpManager(categoryActionsManager);
 
     await actions.train();
 
@@ -53,6 +53,6 @@ export class NlpService implements OnModuleInit {
 
     console.log('modelos treinados com sucesso');
 
-    return { actions };
+    return { actions, categories };
   }
 }

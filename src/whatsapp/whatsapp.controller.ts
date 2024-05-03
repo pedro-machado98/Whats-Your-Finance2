@@ -7,26 +7,20 @@ import { WhatsappService } from './whatsapp.service';
 @ApiTags('Whatsapp endpoints')
 @Controller('whatsapp')
 export class WhatsappController {
-  constructor(
-    private whatsappService: WhatsappService,
-  ) {}
+  constructor(private whatsappService: WhatsappService ) {
+
+  }
 
   @Get('webhook')
   primeiraConexao(
     @Req() req: Request,
     @Res() res: Response,
   ) {
-    return this.whatsappService.validaPrimeiraConexao(
-      req,
-      res,
-    );
+    return this.whatsappService.validaPrimeiraConexao(req,res);
   }
 
   @Post('webhook')
-  recebeERetornaMensagem(
-    @Req() req: Request,
-    @Res() res: Response,
-  ) {
+  recebeERetornaMensagem( @Req() req: Request, @Res() res: Response) {
     return this.whatsappService.processaMensagem(
       req,
       res,

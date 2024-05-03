@@ -3,8 +3,8 @@ import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { Request, Response } from 'express';
 import { lastValueFrom } from 'rxjs';
-/* eslint-disable prettier/prettier */
 import { NlpService } from 'src/nlp/nlp.service';
+import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
 export class WhatsappService {
@@ -12,11 +12,12 @@ export class WhatsappService {
     constructor(
       private readonly httpService: HttpService, 
       private config: ConfigService,
-      private readonly NlpService: NlpService
+      private readonly nlpService: NlpService,
+      private prisma: PrismaService,
     ) {}
 
     validaPrimeiraConexao(req: Request, res: Response) {
-
+      
         const mode = req.query["hub.mode"];
         const token = req.query["hub.verify_token"];
         const challenge = req.query["hub.challenge"];
@@ -43,8 +44,6 @@ export class WhatsappService {
         const business_phone_number_id = req.body.entry?.[0]?.changes?.[0]?.value?.metadata?.phone_number_id;
   
         var dadosReconhecidos = JSON.stringify( await this.iniciaEProcessaNLP(message.text.body))
-
-        // var dadosReconhecidos = JSON.stringify( await ConversationService.extraiDados(message.text.body));
   
         const url =  `https://graph.facebook.com/v18.0/${business_phone_number_id}/messages`
         const data = {
@@ -73,6 +72,8 @@ export class WhatsappService {
 
 
           const responseStatus = await lastValueFrom(this.httpService.post(url,dataStatus,config))
+
+
         } catch (e) {
           throw(e)
         }
@@ -84,11 +85,15 @@ export class WhatsappService {
     }
 
     async iniciaEProcessaNLP(message: String) {
-      const nlps = await this.NlpService.init();
-      
+      const nlps = await this.nlpService.init();
+
       const actions = await nlps.actions.process('pt', message);
+      const categorias = nlps.categories.process('pt', message);
 
       const actionSelected = actions.intent;
+      const categorySelected = categorias.intent;
+
+      console.log(actions)
       /**
        * Tratar bloco abaixo para casos com 2 numeros.
        */
@@ -98,7 +103,7 @@ export class WhatsappService {
       let dadosMapeados = {
         "Ação": actionSelected,
         "Valor": floatNum ? floatNum : integerNum,
-        "Lugar": "Não reconheci o lugar"
+        "Categoria": categorySelected ? categorySelected : "Geral"
     };
 
       return dadosMapeados

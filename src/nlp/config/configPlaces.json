@@ -1,9 +1,0 @@
-{
-    "language":"pt", 
-    "intents":{
-        "recebi": {
-            "examples": [],
-            "responses": ["Boa", "maneiro"]
-        }
-    }
-}
