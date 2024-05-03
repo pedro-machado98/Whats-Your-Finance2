@@ -20,24 +20,40 @@ model User {
   email String @unique
   hash String
 
-  firstName String?
-  lasName String?
+  DDDtelefone String @unique
+  apelido String
+  firstName String
+  lastName String
 
-  bookmarks Bookmark[]
+  movimentacoes Movimentacao[]
   
   @@map("users")
 }
 
-model Bookmark {
+model Movimentacao {
   id Int @id @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  title String
-  description String?
-  link String
+  entrada_saida String
+  conta String?
+  valor String
+  categoria Categoria @default(GERAL)
 
   userId Int
   user User @relation(fields: [userId], references: [id])
-  @@map("bookmarks")
+  @@map("movimentacoes")
 }
+
+enum Categoria {
+  GERAL
+  MORADIA
+  ALIMENTACAO
+  TRANSPORTE
+  SAUDE
+  EDUCACAO
+  LAZER
+  DESPESAS_PESSOAIS
+  ECONOMIAS
+}
+

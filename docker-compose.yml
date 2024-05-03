@@ -3,11 +3,11 @@ services:
   dev-db:
     image: postgres:13
     ports:
-      - 2020:5432
+      - 2021:5432
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123
-      POSTGRES_DB: nest
+      POSTGRES_DB: finances
     networks:
       - freecodecamp
 networks:

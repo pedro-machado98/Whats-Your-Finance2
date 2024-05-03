@@ -5,7 +5,7 @@ import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library';
 import * as argon from 'argon2';
 import { PrismaService } from 'src/prisma/prisma.service';
 
-import { AuthDto } from './dto';
+import { AuthDto, AuthLogarDto } from './dto';
 
 @Injectable()
 export class AuthService {
@@ -25,11 +25,15 @@ export class AuthService {
         data: {
           email: dto.email,
           hash: hash,
+          DDDtelefone: dto.DDDtelefone,
+          apelido: dto.apelido,
+          firstName: dto.firstName,
+          lastName:dto.lastName,
         },
       });
 
       //retornar o usuario salvo
-      return this.signToken(user.id, user.email);
+      return this.signToken(user.id, user.email, user.DDDtelefone);
     } catch (e) {
       if (
         e instanceof PrismaClientKnownRequestError
@@ -45,7 +49,7 @@ export class AuthService {
     }
   }
 
-  async singin(dto: AuthDto) {
+  async singin(dto: AuthLogarDto) {
     const user =
       await this.prisma.user.findUnique({
         where: {
@@ -70,16 +74,18 @@ export class AuthService {
       );
     }
 
-    return this.signToken(user.id, user.email);
+    return this.signToken(user.id, user.email, user.DDDtelefone);
   }
 
   async signToken(
     userId: number,
     email: string,
+    telefone: string
   ): Promise<{ access_token: string }> {
     const payload = {
       sub: userId,
       email: email,
+      telefone: telefone,
     };
 
     const secret = this.config.get('JWT_SECRET');
@@ -91,7 +97,7 @@ export class AuthService {
     const token = await this.jwt.signAsync(
       payload,
       {
-        // expiresIn: '15m',
+        expiresIn: '0',
         secret: secret,
       },
     );

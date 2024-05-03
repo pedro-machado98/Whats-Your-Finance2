@@ -2,7 +2,7 @@ import { Body, Controller, Post } from '@nestjs/common';
 import { ApiBadRequestResponse, ApiCreatedResponse, ApiForbiddenResponse, ApiTags } from '@nestjs/swagger';
 
 import { AuthService } from './auth.service';
-import { AuthDto } from './dto';
+import { AuthDto, AuthLogarDto } from './dto';
 import { access_token } from './entity';
 
 @ApiTags('Autenticação')
@@ -10,7 +10,6 @@ import { access_token } from './entity';
 export class AuthController {
   constructor(private authService: AuthService) {}
 
-  @Post('/cadastrar')
   @ApiCreatedResponse({
     description: 'Usuario criado',
     type: access_token,
@@ -22,6 +21,7 @@ export class AuthController {
   @ApiForbiddenResponse({
     description:"Credenciais ja foram cadastradas"
   })
+  @Post('/cadastrar')
   singup(@Body() dto: AuthDto) : Promise<{ access_token: string }> {
     console.log(dto);
     return this.authService.signup(dto);
@@ -39,7 +39,7 @@ export class AuthController {
     description:"Credenciais erradas ou não existem"
   })
   @Post('/logar')
-  singin(@Body() dto: AuthDto) {
+  singin(@Body() dto: AuthLogarDto) {
     return this.authService.singin(dto);
   }
 }
