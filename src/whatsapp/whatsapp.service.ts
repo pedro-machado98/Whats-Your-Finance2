@@ -3,8 +3,9 @@ import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { Request, Response } from 'express';
 import { lastValueFrom } from 'rxjs';
-import { NlpService } from 'src/nlp/nlp.service';
-import { PrismaService } from 'src/prisma/prisma.service';
+
+import { NlpService } from '../nlp/nlp.service';
+import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()
 export class WhatsappService {

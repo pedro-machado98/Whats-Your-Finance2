@@ -8,6 +8,7 @@ import { NlpModule } from './nlp/nlp.module';
 import { PrismaModule } from './prisma/prisma.module';
 import { UserModule } from './user/user.module';
 import { WhatsappModule } from './whatsapp/whatsapp.module';
+import { CuzinhoModule } from './cuzinho/cuzinho.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { WhatsappModule } from './whatsapp/whatsapp.module';
     PrismaModule,
     WhatsappModule,
     NlpModule,
+    CuzinhoModule,
   ],
 
   controllers: [AppController],
