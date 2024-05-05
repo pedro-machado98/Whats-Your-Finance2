@@ -1,11 +1,17 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
+import { NerManager2 } from '@nlpjs/ner'
 import { NlpManager } from 'node-nlp';
+import { NerManager } from 'node-nlp'
 
 import configActionsManager from './config/configActions.json';
 import categoryActionsManager from './config/configCategorias.json'
 
 @Injectable()
 export class NlpService implements OnModuleInit {
+
+  actions:any
+  categories:any
+ 
   onModuleInit() {
     this.init();
   }
@@ -44,15 +50,14 @@ export class NlpService implements OnModuleInit {
   }
 
   async init() {
-    const actions = this.setUpManager(configActionsManager);
-    const categories = this.setUpManager(categoryActionsManager);
+    this.actions = this.setUpManager(configActionsManager);
+    this.categories = this.setUpManager(categoryActionsManager);
 
-    await actions.train();
+    await this.actions.train();
 
-    await actions.save();
+    await this.actions.save();
 
     console.log('modelos treinados com sucesso');
-
-    return { actions, categories };
+    
   }
 }

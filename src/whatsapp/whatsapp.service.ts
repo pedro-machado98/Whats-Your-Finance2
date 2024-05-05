@@ -38,16 +38,16 @@ export class WhatsappService {
     console.log("Incoming webhook message:", JSON.stringify(req.body, null));
 
 
-      const message = req.body.entry?.[0]?.changes[0]?.value?.messages?.[0];
+    const message = req.body.entry?.[0]?.changes[0]?.value?.messages?.[0];
   
-      if (message?.type === "text") {
+    if (message?.type === "text") {
     
-        const business_phone_number_id = req.body.entry?.[0]?.changes?.[0]?.value?.metadata?.phone_number_id;
+      const business_phone_number_id = req.body.entry?.[0]?.changes?.[0]?.value?.metadata?.phone_number_id;
   
-        var dadosReconhecidos = JSON.stringify( await this.iniciaEProcessaNLP(message.text.body))
+      var dadosReconhecidos = JSON.stringify( await this.iniciaEProcessaNLP(message.text.body))
   
-        const url =  `https://graph.facebook.com/v18.0/${business_phone_number_id}/messages`
-        const data = {
+      const url =  `https://graph.facebook.com/v18.0/${business_phone_number_id}/messages`
+      const data = {
             messaging_product: "whatsapp",
             to: message.from,
             text: { body: "Reconhecemos as informações:\n" + dadosReconhecidos},
@@ -55,44 +55,43 @@ export class WhatsappService {
               message_id: message.id, 
             }, 
         }
-        const config = {
+      const config = {
           headers:{
             Authorization:`Bearer ${this.config.get('TEST_BEARER_WHATSAPP')}`
           }
         }
 
-        try {
-          const response = await lastValueFrom(this.httpService.post(url,data,config))
+      try {
+        const response = await lastValueFrom(this.httpService.post(url,data,config))
 
           
-          const dataStatus = {
-            messaging_product: "whatsapp",
-            status: "read",
-            message_id: message.id,
-          }
-
-
-          const responseStatus = await lastValueFrom(this.httpService.post(url,dataStatus,config))
-
-
-        } catch (e) {
-          throw(e)
+        const dataStatus = {
+          messaging_product: "whatsapp",
+          status: "read",
+          message_id: message.id,
         }
 
+        console.log(dataStatus)
 
-        res.sendStatus(200);
+        const responseStatus = await lastValueFrom(this.httpService.post(url,dataStatus,config))
+
+
+      } catch (e) {
+        throw(e)
       }
-
+      
     }
+    
+    res.sendStatus(200);
+  }
 
     async iniciaEProcessaNLP(message: String) {
-      const nlps = await this.nlpService.init();
-
-      const actions = await nlps.actions.process('pt', message);
-      const categorias = nlps.categories.process('pt', message);
+      
+      const actions = await this.nlpService.actions.process('pt', message)
+      // const categorias = nlps.categories.process('pt', message);
 
       const actionSelected = actions.intent;
-      const categorySelected = categorias.intent;
+      // const categorySelected = categorias.intent;
 
       console.log(actions)
       /**
@@ -104,7 +103,7 @@ export class WhatsappService {
       let dadosMapeados = {
         "Ação": actionSelected,
         "Valor": floatNum ? floatNum : integerNum,
-        "Categoria": categorySelected ? categorySelected : "Geral"
+        // "Categoria": categorySelected ? categorySelected : "Geral"
     };
 
       return dadosMapeados

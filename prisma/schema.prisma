@@ -37,7 +37,7 @@ model Movimentacao {
 
   entrada_saida String
   conta String?
-  valor String
+  valor Float
   categoria Categoria @default(GERAL)
 
   userId Int
