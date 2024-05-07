@@ -99,8 +99,25 @@ export class WhatsappService {
     console.log(actions.entities)
     /**
      * Tratar bloco abaixo, em um exemplo como abaixo:
-     * 'Comprei uma cama de 1000 merréis na loja do Tio'
-     * A logica aplicada para float e Num pega apenas o primeiro numero (1), não é correto, criar uma forma de pegar todos os numeros 
+     *        'Comprei uma cama de 1000 merréis na loja do Tio'
+     * Nesse caso 'uma' é interpretado como o valor 1 e por isso da erro na aplicação. Para tratar esses casos é podemos usar um isNumber()
+     * Pegando o sourceText.
+     * Outra frase que da problema:
+     *        'Gastei 20 reais com aluguel'
+     * 
+     * O problema dessa frase é que ele reconhece reais como moeda, um dos jeitos de tratar é "trimmar" ou retirar qualquer palavra igual a reais da frase.
+     * exemplo de payload:
+     * {
+          start: 8,
+          end: 10,
+          len: 3,
+          accuracy: 0.95,
+          sourceText: 'uma',
+          utteranceText: 'uma',
+          entity: 'number',
+          resolution: { strValue: '1', value: 1, subtype: 'integer' }
+        },
+
      */
     const floatNum = actions.entities.filter(elem=>elem.resolution.subtype=="float").map(e=> e.resolution.value)[0]
     const integerNum = actions.entities.filter(elem=>elem.resolution.subtype=="integer").map(e=> e.resolution.value)[0]
