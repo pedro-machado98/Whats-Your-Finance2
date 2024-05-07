@@ -89,18 +89,18 @@ export class WhatsappService {
     res.sendStatus(200);
   }
 
-  async detectaInformacoesNLP(message: String) {
+  async detectaInformacoesNLP(message: string) {
     
     const actions = await this.nlpService.actions.process('pt', message);
     const categories = await this.nlpService.categories.findEntities(message,'pt')
 
-    // console.log(categories);
     const actionSelected = actions.intent;
-    const categorySelected = categories;
-  
-    console.log(categories);
+    const categorySelected = categories[0]?.entity;
+    console.log(actions.entities)
     /**
-     * Tratar bloco abaixo para casos com 2 numeros.
+     * Tratar bloco abaixo, em um exemplo como abaixo:
+     * 'Comprei uma cama de 1000 merréis na loja do Tio'
+     * A logica aplicada para float e Num pega apenas o primeiro numero (1), não é correto, criar uma forma de pegar todos os numeros 
      */
     const floatNum = actions.entities.filter(elem=>elem.resolution.subtype=="float").map(e=> e.resolution.value)[0]
     const integerNum = actions.entities.filter(elem=>elem.resolution.subtype=="integer").map(e=> e.resolution.value)[0]

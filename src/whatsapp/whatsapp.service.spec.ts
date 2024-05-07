@@ -21,6 +21,7 @@ describe('WhatsappService', () => {
 
     service = module.get<WhatsappService>(WhatsappService);
     nlp = module.get<NlpService>(NlpService);
+    nlp.init()
   });
 
 //   it('should be defined', () => {
@@ -29,9 +30,15 @@ describe('WhatsappService', () => {
 
   describe('Classifica uma categoria', () => {
     it('should classify message', async () => {
-        const message = 'Comprei uma cama de 100 merréis na loja do Tio';
+
+        const message = 'Comprei uma cama de 1000.00 merréis na loja do Tio';
         const classification = await service.detectaInformacoesNLP(message);
-        const payload = {}
+        const payload = 
+          {
+            "Ação": "recebi",
+            "Categoria": "moradia",
+            "Valor": 1,
+          }
         
         expect(classification).toStrictEqual(payload);
     })

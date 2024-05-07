@@ -16,8 +16,10 @@ export class NlpService implements OnModuleInit {
   }
 
   private setUpEntityManager (config : any){
-    // const manager = new NlpManager( {threshold: 0.8} );
-    const manager = new NerManager( {threshold: 0.8} );
+    const manager = new NerManager( {
+      threshold: 0.8,
+      builtinWhitelist: ['number'], 
+    } );
     const keys = Object.keys(config.intents);
 
     keys.forEach((key) => {
