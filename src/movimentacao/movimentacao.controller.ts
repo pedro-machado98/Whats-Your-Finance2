@@ -1,7 +1,8 @@
-import { JwtGuard } from 'src/auth/guard';
-import { MovimentacaoService } from './movimentacao.service';
 import { Body, Controller, Delete, Get, Param, ParseIntPipe, Post, Put, Req, UseGuards } from '@nestjs/common';
+
+import { JwtGuard } from '../auth/guard';
 import { CriarGetMovimentacaoDTO, EditarMovimentacaoDTO } from './dto';
+import { MovimentacaoService } from './movimentacao.service';
 
 @Controller('movimentacao')
 export class MovimentacaoController {

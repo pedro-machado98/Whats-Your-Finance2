@@ -1,7 +1,6 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { NerManager2 } from '@nlpjs/ner'
-import { NlpManager } from 'node-nlp';
-import { NerManager } from 'node-nlp'
+import { NlpManager,  } from 'node-nlp';
+import { NerManager } from 'node-nlp';
 
 import configActionsManager from './config/configActions.json';
 import categoryActionsManager from './config/configCategorias.json'
@@ -14,6 +13,27 @@ export class NlpService implements OnModuleInit {
  
   onModuleInit() {
     this.init();
+  }
+
+  private setUpEntityManager (config : any){
+    // const manager = new NlpManager( {threshold: 0.8} );
+    const manager = new NerManager( {threshold: 0.8} );
+    const keys = Object.keys(config.intents);
+
+    keys.forEach((key) => {
+
+      const intent = config.intents[key];
+      intent.examples.forEach((example) => {
+        manager.addNamedEntityText(
+          key,
+          example,
+          [config.language],
+          [example],
+        );
+      });
+    });
+
+    return manager;
   }
 
   private setUpManager(config: any) {
@@ -51,7 +71,7 @@ export class NlpService implements OnModuleInit {
 
   async init() {
     this.actions = this.setUpManager(configActionsManager);
-    this.categories = this.setUpManager(categoryActionsManager);
+    this.categories = this.setUpEntityManager(categoryActionsManager);
 
     await this.actions.train();
 

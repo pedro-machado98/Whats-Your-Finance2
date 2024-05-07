@@ -1,7 +1,8 @@
-import { PrismaService } from './../prisma/prisma.service';
 import { ConflictException, ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
-import { CriarGetMovimentacaoDTO } from './dto';
 import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library';
+
+import { PrismaService } from './../prisma/prisma.service';
+import { CriarGetMovimentacaoDTO } from './dto';
 
 @Injectable()
 export class MovimentacaoService {
@@ -76,6 +77,7 @@ export class MovimentacaoService {
         let data = {}
         let updatedMovimentacao;
 
+        //refatorar para usar Object Keys;
         if(movimentacaoDto.entrada_saida){
             data['entrada_saida'] = movimentacaoDto.entrada_saida
         }
@@ -91,6 +93,7 @@ export class MovimentacaoService {
         if(movimentacaoDto.categoria){
             data['categoria'] = movimentacaoDto.categoria
         }
+
         try{
             updatedMovimentacao = await this.prismaService.movimentacao.update({
                 data: data,

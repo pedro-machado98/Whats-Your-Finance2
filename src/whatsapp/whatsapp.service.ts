@@ -35,16 +35,20 @@ export class WhatsappService {
 
     async processaMensagem(req: Request, res: Response){
 
-    console.log("Incoming webhook message:", JSON.stringify(req.body, null));
+      const dataAgora = new Date().toLocaleDateString
+      
+      console.log("[ "+ dataAgora.toString + " ] Recebendo webhook status:", JSON.stringify(req.body, null));
+      
+      
+      const message = req.body.entry?.[0]?.changes[0]?.value?.messages?.[0];
+      
+      if (message?.type === "text") {
 
-
-    const message = req.body.entry?.[0]?.changes[0]?.value?.messages?.[0];
-  
-    if (message?.type === "text") {
+        console.log("[ "+ dataAgora.toString + " ] Recebendo webhook message:", JSON.stringify(req.body, null));
     
       const business_phone_number_id = req.body.entry?.[0]?.changes?.[0]?.value?.metadata?.phone_number_id;
   
-      var dadosReconhecidos = JSON.stringify( await this.iniciaEProcessaNLP(message.text.body))
+      var dadosReconhecidos = JSON.stringify( await this.detectaInformacoesNLP(message.text.body))
   
       const url =  `https://graph.facebook.com/v18.0/${business_phone_number_id}/messages`
       const data = {
@@ -85,27 +89,33 @@ export class WhatsappService {
     res.sendStatus(200);
   }
 
-    async iniciaEProcessaNLP(message: String) {
-      
-      const actions = await this.nlpService.actions.process('pt', message)
-      // const categorias = nlps.categories.process('pt', message);
+  async detectaInformacoesNLP(message: String) {
+    
+    const actions = await this.nlpService.actions.process('pt', message);
+    const categories = await this.nlpService.categories.findEntities(message,'pt')
 
-      const actionSelected = actions.intent;
-      // const categorySelected = categorias.intent;
+    // console.log(categories);
+    const actionSelected = actions.intent;
+    const categorySelected = categories;
+  
+    console.log(categories);
+    /**
+     * Tratar bloco abaixo para casos com 2 numeros.
+     */
+    const floatNum = actions.entities.filter(elem=>elem.resolution.subtype=="float").map(e=> e.resolution.value)[0]
+    const integerNum = actions.entities.filter(elem=>elem.resolution.subtype=="integer").map(e=> e.resolution.value)[0]
 
-      console.log(actions)
-      /**
-       * Tratar bloco abaixo para casos com 2 numeros.
-       */
-      const floatNum = actions.entities.filter(elem=>elem.resolution.subtype=="float").map(e=> e.resolution.value)[0]
-      const integerNum = actions.entities.filter(elem=>elem.resolution.subtype=="integer").map(e=> e.resolution.value)[0]
+    let dadosMapeados = {
+      "Ação": actionSelected,
+      "Valor": floatNum ? floatNum : integerNum,
+      "Categoria": categorySelected ? categorySelected : "Geral"
+  };
 
-      let dadosMapeados = {
-        "Ação": actionSelected,
-        "Valor": floatNum ? floatNum : integerNum,
-        // "Categoria": categorySelected ? categorySelected : "Geral"
-    };
+    console.log(dadosMapeados)
 
-      return dadosMapeados
-    }
+    return dadosMapeados
+
+  };
+
+
 }
