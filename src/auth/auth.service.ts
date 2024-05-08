@@ -33,7 +33,7 @@ export class AuthService {
       });
 
       //retornar o usuario salvo
-      return this.signToken(user.id, user.email, user.DDDtelefone);
+      return this.signToken(user.id, user.DDDtelefone);
     } catch (e) {
       if (
         e instanceof PrismaClientKnownRequestError
@@ -53,7 +53,7 @@ export class AuthService {
     const user =
       await this.prisma.user.findUnique({
         where: {
-          email: dto.email,
+          DDDtelefone: dto.DDDtelefone,
         },
       });
 
@@ -74,17 +74,15 @@ export class AuthService {
       );
     }
 
-    return this.signToken(user.id, user.email, user.DDDtelefone);
+    return this.signToken(user.id, user.DDDtelefone);
   }
 
   async signToken(
     userId: number,
-    email: string,
     telefone: string
   ): Promise<{ access_token: string }> {
     const payload = {
       sub: userId,
-      email: email,
       telefone: telefone,
     };
 
@@ -97,7 +95,7 @@ export class AuthService {
     const token = await this.jwt.signAsync(
       payload,
       {
-        expiresIn: '-1',
+        // expiresIn: '-1',
         secret: secret,
       },
     );
