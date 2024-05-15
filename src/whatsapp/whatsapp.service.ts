@@ -34,17 +34,14 @@ export class WhatsappService {
     }
 
     async processaMensagem(req: Request, res: Response){
-
-      const dataAgora = new Date().toLocaleDateString
       
-      console.log("[ "+ dataAgora.toString + " ] Recebendo webhook status:", JSON.stringify(req.body, null));
-      
+      // console.log(" Recebendo webhook status:", JSON.stringify(req.body, null));      
       
       const message = req.body.entry?.[0]?.changes[0]?.value?.messages?.[0];
       
       if (message?.type === "text") {
 
-        console.log("[ "+ dataAgora.toString + " ] Recebendo webhook message:", JSON.stringify(req.body, null));
+        console.log("Recebendo webhook message:", JSON.stringify(req.body, null));
     
       const business_phone_number_id = req.body.entry?.[0]?.changes?.[0]?.value?.metadata?.phone_number_id;
   
@@ -75,7 +72,7 @@ export class WhatsappService {
           message_id: message.id,
         }
 
-        console.log(dataStatus)
+        // console.log(dataStatus)
 
         const responseStatus = await lastValueFrom(this.httpService.post(url,dataStatus,config))
 
@@ -93,10 +90,13 @@ export class WhatsappService {
     
     const actions = await this.nlpService.actions.process('pt', message);
     const categories = await this.nlpService.categories.findEntities(message,'pt')
-
-    const actionSelected = actions.intent;
-    const categorySelected = categories[0]?.entity;
-    console.log(actions.entities)
+    console.log(JSON.stringify(actions))
+    let actionSelected = actions.intent;
+    let categorySelected = categories[0]?.entity;
+    if(categorySelected == 'number'){
+      categorySelected = categories[1]?.entity;
+    }
+    // console.log(actions)
     /**
      * Tratar bloco abaixo, em um exemplo como abaixo:
      *        'Comprei uma cama de 1000 merréis na loja do Tio'
@@ -122,13 +122,17 @@ export class WhatsappService {
     const floatNum = actions.entities.filter(elem=>elem.resolution.subtype=="float").map(e=> e.resolution.value)[0]
     const integerNum = actions.entities.filter(elem=>elem.resolution.subtype=="integer").map(e=> e.resolution.value)[0]
 
+        // console.log(actions+'\n\n\n')
+        // console.log(actions.entities+'\n\n\n')
+        console.log(floatNum+'\n\n')
+        console.log(integerNum+'\n\n')
     let dadosMapeados = {
       "Ação": actionSelected,
       "Valor": floatNum ? floatNum : integerNum,
       "Categoria": categorySelected ? categorySelected : "Geral"
   };
 
-    console.log(dadosMapeados)
+    // console.log(dadosMapeados)
 
     return dadosMapeados
 
