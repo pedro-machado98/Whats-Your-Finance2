@@ -35,6 +35,14 @@
         "trainByDomain": false,
         "keepStopwords": true,
         "stemDict": {
+          "hoj,meu,receb,salari": {
+            "domain": "default",
+            "intent": "recebi"
+          },
+          "amig,de,o,pix,receb,um": {
+            "domain": "default",
+            "intent": "recebi"
+          },
           "freelanc,pagament,por,receb,trabalh,um,um": {
             "domain": "default",
             "intent": "recebi"
@@ -99,9 +107,53 @@
             "domain": "default",
             "intent": "recebi"
           },
-          "cont,envi,o,par,vinicius": {
+          "fui,por,recompens,temporari,trabalh,um": {
             "domain": "default",
-            "intent": "gastei"
+            "intent": "recebi"
+          },
+          "bonificaca,desempenh,por,receb,uma": {
+            "domain": "default",
+            "intent": "recebi"
+          },
+          "apost,dinheir,em,ganh,uma": {
+            "domain": "default",
+            "intent": "recebi"
+          },
+          "de,devolv,produt,receb,reembols,um,um": {
+            "domain": "default",
+            "intent": "recebi"
+          },
+          "consultor,fui,por,remuner,uma": {
+            "domain": "default",
+            "intent": "recebi"
+          },
+          "dos,mes,meus,pais,receb,uma": {
+            "domain": "default",
+            "intent": "recebi"
+          },
+          "bons,ganh,gratificaca,por,servic,uma": {
+            "domain": "default",
+            "intent": "recebi"
+          },
+          "de,indenizaca,receb,segur,uma": {
+            "domain": "default",
+            "intent": "recebi"
+          },
+          "do,govern,receb,subsidi,um": {
+            "domain": "default",
+            "intent": "recebi"
+          },
+          "ganh,lot,uma": {
+            "domain": "default",
+            "intent": "recebi"
+          },
+          "de,fui,jardinag,pag,por,servic,um": {
+            "domain": "default",
+            "intent": "recebi"
+          },
+          "de,heranc,receb,um,valor": {
+            "domain": "default",
+            "intent": "recebi"
           },
           "carta,com,credit,de,despend,eu,mes,minh": {
             "domain": "default",
@@ -182,6 +234,838 @@
           "com,desembols,dinheir,em,eu,merc,no,pagament": {
             "domain": "default",
             "intent": "gastei"
+          },
+          "carta,com,credit,de,eletron,em,eu,gast,meu": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "automat,cont,debit,eu,minh,pagu,utiliz": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,compr,credit,de,em,eu,pagament,present,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aluguel,banc,com,eu,o,pagu,transferenc": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "amig,despach,dinheir,eu,par,pix,um,via": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "academ,com,despend,eu,mensal,na,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,cinem,com,eu,gast,meu,no,pag,pre": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aer,com,compr,eu,onlin,pagament,passagens": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "consult,dinheir,em,eu,medic,pagu,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "despach,dinheir,eu,exterior,internacional,o,par,transferenc,via": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "cont,envi,o,par,vinicius": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,credit,de,despend,mes,minh": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "dinheir,em,esgot,minh,poupanc,viv": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aco,banc,em,invest,transferenc,via": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,de,debit,esbanj,meu,no,shopping": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "dilapid,em,meu,parcel,salari": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "chequ,de,desfiz,econom,em,me,minh": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aplic,de,de,despach,dinheir,mei,o,pagament,por,rapid,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,dissip,eletron,fortun,minh,transferenc": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "dinheir,econom,em,esgot,fisic,minh": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,despend,em,pag,pre,viagens": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "bal,com,dissip,em,espec,na,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aproximaca,desembols,loj,na,pagament,por,utiliz": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carteir,com,em,esvazi,minh,not,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,contactless,gast,no,restaur": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,banking,cont,del,internet,par,transfer,via": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "cod,com,despend,em,gadgets,pagament,por,qr": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,compr,dissip,em,onlin,virtual": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "em,esbanj,pagament,parcel,roup,utiliz": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "chequ,com,dissip,em,fest,na,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,desembols,dinheir,em,merc,no,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,credit,de,eletron,em,gast,meu": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "automat,cont,debit,minh,pagu,utiliz": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,compr,credit,de,em,pagament,present,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aluguel,banc,com,o,pagu,transferenc": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "amig,despach,dinheir,par,pix,um,via": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "academ,com,despend,mensal,na,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,cinem,com,gast,meu,no,pag,pre": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aer,com,compr,onlin,pagament,passagens": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "consult,dinheir,em,medic,pagu,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "despach,dinheir,exterior,internacional,o,par,transferenc,via": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,em,feir,gast,na,not,pagament,tud": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,de,debit,jant,o,pagu": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "banc,compr,livr,transferenc,usand": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,em,gast,mov,pagament,parcel": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,credit,de,em,em,invest,nov,pagament,smartphon,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,bancari,bolet,com,da,escol,mensal,pagu": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,compr,ingress,onlin,pagament,par,show,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,de,debit,em,gast,no,pagament,supermerc": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,despend,eletrodomest,em,pagament,parcel": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,com,dinheir,em,gasolin,pagament,pagu": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,credit,de,de,em,em,gast,invern,pagament,roup": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,desembols,dinheir,em,farmac,na,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "banc,com,em,escol,gast,material,pagament,por,transferenc": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aniversari,com,compr,de,onlin,pagament,present,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "artig,carta,com,de,debit,despend,em,em,esport,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,assinatur,automat,com,debit,do,pagu,streaming": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,carta,cas,com,compr,credit,de,decoraca,em,pagament,par": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "acessori,com,de,dinheir,em,em,gast,mod,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,despend,eletron,em,jog,onlin,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "o,par,remet,um,valor,vinicius": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,credit,de,dispens,mes,minh": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "desembols,dinheir,em,feir,na,tud,viv": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aco,apliqu,banc,capital,em,transferenc,via": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,de,debit,estorriqu,meu,no,shopping": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "despej,em,meu,parcel,salari": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "chequ,econom,em,liquid,minh": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aplic,de,de,dinheir,envi,mei,o,pagament,por,rapid,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,derram,eletron,fortun,minh,transferenc": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "dinheir,drenei,econom,em,fisic,minh": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,em,fund,injet,pag,pre,viagens": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "bal,com,em,espec,na,pagament,torr": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aproximaca,efetu,loj,na,pagament,pagament,por,utiliz": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carteir,com,desocup,em,minh,not,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,contactless,no,pagu,restaur": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,banking,cont,del,destin,fund,internet,par,via": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "capital,cod,com,em,gadgets,injet,pagament,por,qr": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,compr,desbarat,em,onlin,virtual": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "em,pagament,parcel,roup,torr,utiliz": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "chequ,com,desperdic,em,fest,na,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,compr,dinheir,efetu,em,merc,no,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aloqu,carta,com,credit,de,eletron,em,fund,meu": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "automat,cont,debit,liquidifiqu,minh,utiliz": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "adquir,carta,com,credit,de,em,pagament,present,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aluguel,banc,com,o,remet,transferenc": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "amig,dinheir,envi,par,pix,um,via": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "academ,alinh,com,despes,mensal,na,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,cinem,com,consum,meu,no,pag,pre": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aer,aquir,com,onlin,pagament,passagens": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compens,consult,dinheir,em,medic,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "dinheir,envi,exterior,internacional,o,par,transferenc,via": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,em,feir,na,not,pagament,queim,tud": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,de,debit,jant,o,quit": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "adquir,banc,livr,transferenc,usand": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "capital,com,desempenh,em,mov,pagament,parcel": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,credit,de,direcion,em,fund,nov,pagament,par,smartphon,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,bancari,bolet,com,da,escol,mensal,quit": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "adquir,com,ingress,onlin,pagament,par,show,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carta,com,de,debit,desempenh,em,fund,no,pagament,supermerc": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,descarregu,eletrodomest,em,pagament,parcel": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,com,dinheir,direcion,em,gasolin,pagament,pagament,par": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "adquir,carta,com,credit,de,de,em,invern,pagament,roup": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,dinheir,em,farmac,na,pagament,quit": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "banc,capital,com,em,empenh,escol,material,pagament,por,transferenc": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "adquir,aniversari,com,de,onlin,pagament,present,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "artig,carta,com,de,debit,em,em,esport,fund,pagament,remet": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,assinatur,automat,com,debit,do,quit,streaming": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,adquir,carta,cas,com,credit,de,decoraca,em,pagament,par": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "acessori,com,de,desloqu,dinheir,em,em,fund,mod,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "com,desempenh,eletron,em,jog,onlin,pagament": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "desembols,o,par,rea,vinicius": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "celul,em,invest,mes,nov,sua,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "car,compr,present,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "as,cont,do,mes,pag,tod": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,amig,cont,dinheir,do,par,transfer": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "consideravel,desembols,em,quant,roup,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aco,bols,de,em,invest,na,valor": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "fortun,gast,no,shopping,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "da,desembols,dinheir,o,poupanc,tod": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "dinheir,em,pag,por,servic,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "exterior,o,par,remet,signific,um,valor": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "de,em,final,o,queim,salari,seman,tod,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "alta,dispendi,eletron,em,quant,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "arte,de,desembols,dinheir,obra,par,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,carr,nov,pag,por,um,vist": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "desembols,em,fest,grand,quant,uma,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "adiant,curs,pag,por,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "bilhet,compr,de,lot,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "de,mult,pag,transit,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "construca,de,desembols,em,material": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "anual,assinatur,de,pag,por,revist,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aniversari,compr,de,present,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "de,desembols,em,equip,informat": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aer,as,compr,fer,par,passagens": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "criptomoed,em,invest": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "internacional,pag,por,uma,viag": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "cas,desembols,em,na,reform": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,nov,um,videogam": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "faculdad,matricul,na,pag,pel": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "consult,desembols,em,medic": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,guard,nov,roup,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "carr,consert,do,pag,pel": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "car,desembols,em,jant,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,ingress,par,show,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,academ,anual,pag": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "ajud,amig,desembols,par,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,laptop,nov,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "de,pag,por,saud,segur,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "contrat,de,desembols,par,servic,streaming,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,de,natal,present": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "pag,passei,por,turist,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "desembols,em,mov,nov": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,de,lux,relogi,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "curs,de,idiom,pag,por,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "desembols,em,spa,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,esport,event,ingress,par,um,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "consult,de,emergenc,pag,por,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "acessori,de,desembols,em,mod": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,nov,tablet,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "casament,de,fest,pag,por,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "de,desembols,em,jog,tabuleir": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,de,equip,ginast,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "pag,por,profissional,treinament,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "chiqu,desembols,em,restaur,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "biciclet,compr,nov,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "pag,por,tatuag,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "brinqued,desembols,em,filh,os,par": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "cam,compr,fotograf,nov,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "belez,de,pag,por,tratament,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "desembols,e,em,jardinag,plant": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "cinem,compr,ingress,o,par": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "assinatur,de,jornal,pag,por,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "caridad,de,desembols,em,obra,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "caf,compr,de,maquin,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "de,entreg,pag,por,servic,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "desembols,em,nov,sof,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,cruzeir,de,uma,viag": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "cirurg,estet,pag,por,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "club,de,desembols,em,leitur,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,nov,televisor,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "curs,onlin,pag,por,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "academ,de,desembols,em,ginast,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "assinatur,compr,de,de,music,streaming,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "de,manutenca,pag,por,servic,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "consultor,desembols,em,financeir,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,de,nov,par,sapat,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "culin,de,oficin,pag,por,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "aventur,de,desembols,em,uma,viag": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,ingress,o,par,teatr,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,cab,de,pacot,pag,por,tv,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "de,desembols,em,lav,maquin,nov,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "assinatur,compr,de,revist,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "consult,de,nutricion,pag,por,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "desembols,em,escol,material": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "a,compr,cortin,nov,par,sal,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "de,pag,pintur,por,servic,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "curs,de,desembols,em,fotograf,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,geladeir,nov,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "de,encan,pag,por,servic,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "academ,assinatur,de,desembols,em,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "compr,de,estant,livr,nov,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "de,eletric,pag,por,servic,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "desembols,em,odontolog,tratament,um": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "assinatur,compr,de,jog,onlin,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "faxin,pag,por,residencial,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "assinatur,assinatur,de,desembols,em,por,tv,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "cam,compr,nov,uma": {
+            "domain": "default",
+            "intent": "gastei"
+          },
+          "consult,de,pag,por,psicolog,uma": {
+            "domain": "default",
+            "intent": "gastei"
           }
         },
         "intentDict": {
@@ -210,6 +1094,26 @@
             "language": "pt",
             "keepStopwords": true,
             "docs": [
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "receb",
+                  "meu",
+                  "salari",
+                  "hoj"
+                ]
+              },
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "receb",
+                  "o",
+                  "pix",
+                  "de",
+                  "um",
+                  "amig"
+                ]
+              },
               {
                 "intent": "recebi",
                 "tokens": [
@@ -390,13 +1294,128 @@
                 ]
               },
               {
-                "intent": "gastei",
+                "intent": "recebi",
                 "tokens": [
-                  "envi",
-                  "cont",
-                  "par",
-                  "o",
-                  "vinicius"
+                  "fui",
+                  "recompens",
+                  "por",
+                  "um",
+                  "trabalh",
+                  "temporari"
+                ]
+              },
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "receb",
+                  "uma",
+                  "bonificaca",
+                  "por",
+                  "desempenh"
+                ]
+              },
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "ganh",
+                  "dinheir",
+                  "em",
+                  "uma",
+                  "apost"
+                ]
+              },
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "receb",
+                  "um",
+                  "reembols",
+                  "de",
+                  "um",
+                  "produt",
+                  "devolv"
+                ]
+              },
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "fui",
+                  "remuner",
+                  "por",
+                  "uma",
+                  "consultor"
+                ]
+              },
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "receb",
+                  "uma",
+                  "mes",
+                  "dos",
+                  "meus",
+                  "pais"
+                ]
+              },
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "ganh",
+                  "uma",
+                  "gratificaca",
+                  "por",
+                  "bons",
+                  "servic"
+                ]
+              },
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "receb",
+                  "uma",
+                  "indenizaca",
+                  "de",
+                  "segur"
+                ]
+              },
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "receb",
+                  "um",
+                  "subsidi",
+                  "do",
+                  "govern"
+                ]
+              },
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "ganh",
+                  "uma",
+                  "lot"
+                ]
+              },
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "fui",
+                  "pag",
+                  "por",
+                  "um",
+                  "servic",
+                  "de",
+                  "jardinag"
+                ]
+              },
+              {
+                "intent": "recebi",
+                "tokens": [
+                  "receb",
+                  "um",
+                  "valor",
+                  "de",
+                  "heranc"
                 ]
               },
               {
@@ -657,133 +1676,2733 @@
                   "em",
                   "dinheir"
                 ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "eu",
+                  "gast",
+                  "em",
+                  "eletron",
+                  "com",
+                  "meu",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "eu",
+                  "pagu",
+                  "minh",
+                  "cont",
+                  "utiliz",
+                  "debit",
+                  "automat"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "eu",
+                  "compr",
+                  "um",
+                  "present",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "eu",
+                  "pagu",
+                  "o",
+                  "aluguel",
+                  "com",
+                  "transferenc",
+                  "banc"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "eu",
+                  "despach",
+                  "dinheir",
+                  "par",
+                  "um",
+                  "amig",
+                  "via",
+                  "pix"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "eu",
+                  "despend",
+                  "na",
+                  "academ",
+                  "com",
+                  "pagament",
+                  "mensal"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "eu",
+                  "gast",
+                  "no",
+                  "cinem",
+                  "com",
+                  "meu",
+                  "carta",
+                  "pre",
+                  "pag"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "eu",
+                  "compr",
+                  "passagens",
+                  "aer",
+                  "com",
+                  "pagament",
+                  "onlin"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "eu",
+                  "pagu",
+                  "uma",
+                  "consult",
+                  "medic",
+                  "em",
+                  "dinheir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "eu",
+                  "despach",
+                  "dinheir",
+                  "par",
+                  "o",
+                  "exterior",
+                  "via",
+                  "transferenc",
+                  "internacional"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "despend",
+                  "minh",
+                  "mes",
+                  "com",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "esgot",
+                  "minh",
+                  "poupanc",
+                  "em",
+                  "dinheir",
+                  "viv"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "invest",
+                  "em",
+                  "aco",
+                  "via",
+                  "transferenc",
+                  "banc"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "esbanj",
+                  "no",
+                  "shopping",
+                  "com",
+                  "meu",
+                  "carta",
+                  "de",
+                  "debit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "dilapid",
+                  "meu",
+                  "salari",
+                  "em",
+                  "parcel"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desfiz",
+                  "me",
+                  "de",
+                  "minh",
+                  "econom",
+                  "em",
+                  "chequ"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "despach",
+                  "o",
+                  "dinheir",
+                  "rapid",
+                  "por",
+                  "mei",
+                  "de",
+                  "um",
+                  "aplic",
+                  "de",
+                  "pagament"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "dissip",
+                  "minh",
+                  "fortun",
+                  "com",
+                  "transferenc",
+                  "eletron"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "esgot",
+                  "minh",
+                  "econom",
+                  "em",
+                  "dinheir",
+                  "fisic"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "despend",
+                  "em",
+                  "viagens",
+                  "com",
+                  "carta",
+                  "pre",
+                  "pag"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "dissip",
+                  "na",
+                  "bal",
+                  "com",
+                  "pagament",
+                  "em",
+                  "espec"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "na",
+                  "loj",
+                  "utiliz",
+                  "pagament",
+                  "por",
+                  "aproximaca"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "esvazi",
+                  "minh",
+                  "carteir",
+                  "com",
+                  "pagament",
+                  "em",
+                  "not"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "gast",
+                  "no",
+                  "restaur",
+                  "com",
+                  "carta",
+                  "contactless"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "transfer",
+                  "par",
+                  "a",
+                  "cont",
+                  "del",
+                  "via",
+                  "internet",
+                  "banking"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "despend",
+                  "em",
+                  "gadgets",
+                  "com",
+                  "pagament",
+                  "por",
+                  "qr",
+                  "cod"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "dissip",
+                  "em",
+                  "compr",
+                  "onlin",
+                  "com",
+                  "carta",
+                  "virtual"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "esbanj",
+                  "em",
+                  "roup",
+                  "utiliz",
+                  "pagament",
+                  "parcel"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "dissip",
+                  "na",
+                  "fest",
+                  "com",
+                  "pagament",
+                  "em",
+                  "chequ"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "no",
+                  "merc",
+                  "com",
+                  "pagament",
+                  "em",
+                  "dinheir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "gast",
+                  "em",
+                  "eletron",
+                  "com",
+                  "meu",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pagu",
+                  "minh",
+                  "cont",
+                  "utiliz",
+                  "debit",
+                  "automat"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "present",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pagu",
+                  "o",
+                  "aluguel",
+                  "com",
+                  "transferenc",
+                  "banc"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "despach",
+                  "dinheir",
+                  "par",
+                  "um",
+                  "amig",
+                  "via",
+                  "pix"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "despend",
+                  "na",
+                  "academ",
+                  "com",
+                  "pagament",
+                  "mensal"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "gast",
+                  "no",
+                  "cinem",
+                  "com",
+                  "meu",
+                  "carta",
+                  "pre",
+                  "pag"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "passagens",
+                  "aer",
+                  "com",
+                  "pagament",
+                  "onlin"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pagu",
+                  "uma",
+                  "consult",
+                  "medic",
+                  "em",
+                  "dinheir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "despach",
+                  "dinheir",
+                  "par",
+                  "o",
+                  "exterior",
+                  "via",
+                  "transferenc",
+                  "internacional"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "gast",
+                  "tud",
+                  "na",
+                  "feir",
+                  "com",
+                  "pagament",
+                  "em",
+                  "not"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pagu",
+                  "o",
+                  "jant",
+                  "com",
+                  "carta",
+                  "de",
+                  "debit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "livr",
+                  "usand",
+                  "transferenc",
+                  "banc"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "gast",
+                  "em",
+                  "mov",
+                  "com",
+                  "pagament",
+                  "parcel"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "invest",
+                  "em",
+                  "um",
+                  "nov",
+                  "smartphon",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pagu",
+                  "a",
+                  "mensal",
+                  "da",
+                  "escol",
+                  "com",
+                  "bolet",
+                  "bancari"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "ingress",
+                  "par",
+                  "um",
+                  "show",
+                  "com",
+                  "pagament",
+                  "onlin"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "gast",
+                  "no",
+                  "supermerc",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "debit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "despend",
+                  "em",
+                  "eletrodomest",
+                  "com",
+                  "pagament",
+                  "parcel"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pagu",
+                  "a",
+                  "gasolin",
+                  "com",
+                  "pagament",
+                  "em",
+                  "dinheir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "gast",
+                  "em",
+                  "roup",
+                  "de",
+                  "invern",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "na",
+                  "farmac",
+                  "com",
+                  "pagament",
+                  "em",
+                  "dinheir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "gast",
+                  "em",
+                  "material",
+                  "escol",
+                  "com",
+                  "pagament",
+                  "por",
+                  "transferenc",
+                  "banc"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "present",
+                  "de",
+                  "aniversari",
+                  "com",
+                  "pagament",
+                  "onlin"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "despend",
+                  "em",
+                  "artig",
+                  "esport",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "debit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pagu",
+                  "a",
+                  "assinatur",
+                  "do",
+                  "streaming",
+                  "com",
+                  "debit",
+                  "automat"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "decoraca",
+                  "par",
+                  "a",
+                  "cas",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "gast",
+                  "em",
+                  "acessori",
+                  "de",
+                  "mod",
+                  "com",
+                  "pagament",
+                  "em",
+                  "dinheir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "despend",
+                  "em",
+                  "jog",
+                  "eletron",
+                  "com",
+                  "pagament",
+                  "onlin"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "remet",
+                  "um",
+                  "valor",
+                  "par",
+                  "o",
+                  "vinicius"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "dispens",
+                  "minh",
+                  "mes",
+                  "com",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "tud",
+                  "na",
+                  "feir",
+                  "em",
+                  "dinheir",
+                  "viv"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "apliqu",
+                  "capital",
+                  "em",
+                  "aco",
+                  "via",
+                  "transferenc",
+                  "banc"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "estorriqu",
+                  "no",
+                  "shopping",
+                  "com",
+                  "meu",
+                  "carta",
+                  "de",
+                  "debit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "despej",
+                  "meu",
+                  "salari",
+                  "em",
+                  "parcel"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "liquid",
+                  "minh",
+                  "econom",
+                  "em",
+                  "chequ"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "envi",
+                  "o",
+                  "dinheir",
+                  "rapid",
+                  "por",
+                  "mei",
+                  "de",
+                  "um",
+                  "aplic",
+                  "de",
+                  "pagament"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "derram",
+                  "minh",
+                  "fortun",
+                  "com",
+                  "transferenc",
+                  "eletron"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "drenei",
+                  "minh",
+                  "econom",
+                  "em",
+                  "dinheir",
+                  "fisic"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "injet",
+                  "fund",
+                  "em",
+                  "viagens",
+                  "com",
+                  "carta",
+                  "pre",
+                  "pag"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "torr",
+                  "na",
+                  "bal",
+                  "com",
+                  "pagament",
+                  "em",
+                  "espec"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "efetu",
+                  "pagament",
+                  "na",
+                  "loj",
+                  "utiliz",
+                  "pagament",
+                  "por",
+                  "aproximaca"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desocup",
+                  "minh",
+                  "carteir",
+                  "com",
+                  "pagament",
+                  "em",
+                  "not"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pagu",
+                  "no",
+                  "restaur",
+                  "com",
+                  "carta",
+                  "contactless"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "destin",
+                  "fund",
+                  "par",
+                  "a",
+                  "cont",
+                  "del",
+                  "via",
+                  "internet",
+                  "banking"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "injet",
+                  "capital",
+                  "em",
+                  "gadgets",
+                  "com",
+                  "pagament",
+                  "por",
+                  "qr",
+                  "cod"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desbarat",
+                  "em",
+                  "compr",
+                  "onlin",
+                  "com",
+                  "carta",
+                  "virtual"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "torr",
+                  "em",
+                  "roup",
+                  "utiliz",
+                  "pagament",
+                  "parcel"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desperdic",
+                  "na",
+                  "fest",
+                  "com",
+                  "pagament",
+                  "em",
+                  "chequ"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "efetu",
+                  "compr",
+                  "no",
+                  "merc",
+                  "com",
+                  "pagament",
+                  "em",
+                  "dinheir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "aloqu",
+                  "fund",
+                  "em",
+                  "eletron",
+                  "com",
+                  "meu",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "liquidifiqu",
+                  "minh",
+                  "cont",
+                  "utiliz",
+                  "debit",
+                  "automat"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "adquir",
+                  "um",
+                  "present",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "remet",
+                  "o",
+                  "aluguel",
+                  "com",
+                  "transferenc",
+                  "banc"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "envi",
+                  "dinheir",
+                  "par",
+                  "um",
+                  "amig",
+                  "via",
+                  "pix"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "alinh",
+                  "despes",
+                  "na",
+                  "academ",
+                  "com",
+                  "pagament",
+                  "mensal"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "consum",
+                  "no",
+                  "cinem",
+                  "com",
+                  "meu",
+                  "carta",
+                  "pre",
+                  "pag"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "aquir",
+                  "passagens",
+                  "aer",
+                  "com",
+                  "pagament",
+                  "onlin"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compens",
+                  "uma",
+                  "consult",
+                  "medic",
+                  "em",
+                  "dinheir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "envi",
+                  "dinheir",
+                  "par",
+                  "o",
+                  "exterior",
+                  "via",
+                  "transferenc",
+                  "internacional"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "queim",
+                  "tud",
+                  "na",
+                  "feir",
+                  "com",
+                  "pagament",
+                  "em",
+                  "not"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "quit",
+                  "o",
+                  "jant",
+                  "com",
+                  "carta",
+                  "de",
+                  "debit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "adquir",
+                  "livr",
+                  "usand",
+                  "transferenc",
+                  "banc"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desempenh",
+                  "capital",
+                  "em",
+                  "mov",
+                  "com",
+                  "pagament",
+                  "parcel"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "direcion",
+                  "fund",
+                  "par",
+                  "um",
+                  "nov",
+                  "smartphon",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "quit",
+                  "a",
+                  "mensal",
+                  "da",
+                  "escol",
+                  "com",
+                  "bolet",
+                  "bancari"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "adquir",
+                  "ingress",
+                  "par",
+                  "um",
+                  "show",
+                  "com",
+                  "pagament",
+                  "onlin"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desempenh",
+                  "fund",
+                  "no",
+                  "supermerc",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "debit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "descarregu",
+                  "em",
+                  "eletrodomest",
+                  "com",
+                  "pagament",
+                  "parcel"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "direcion",
+                  "pagament",
+                  "par",
+                  "a",
+                  "gasolin",
+                  "com",
+                  "pagament",
+                  "em",
+                  "dinheir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "adquir",
+                  "roup",
+                  "de",
+                  "invern",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "quit",
+                  "na",
+                  "farmac",
+                  "com",
+                  "pagament",
+                  "em",
+                  "dinheir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "empenh",
+                  "capital",
+                  "em",
+                  "material",
+                  "escol",
+                  "com",
+                  "pagament",
+                  "por",
+                  "transferenc",
+                  "banc"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "adquir",
+                  "um",
+                  "present",
+                  "de",
+                  "aniversari",
+                  "com",
+                  "pagament",
+                  "onlin"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "remet",
+                  "fund",
+                  "em",
+                  "artig",
+                  "esport",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "debit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "quit",
+                  "a",
+                  "assinatur",
+                  "do",
+                  "streaming",
+                  "com",
+                  "debit",
+                  "automat"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "adquir",
+                  "decoraca",
+                  "par",
+                  "a",
+                  "cas",
+                  "com",
+                  "pagament",
+                  "em",
+                  "carta",
+                  "de",
+                  "credit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desloqu",
+                  "fund",
+                  "em",
+                  "acessori",
+                  "de",
+                  "mod",
+                  "com",
+                  "pagament",
+                  "em",
+                  "dinheir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desempenh",
+                  "em",
+                  "jog",
+                  "eletron",
+                  "com",
+                  "pagament",
+                  "onlin"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "rea",
+                  "par",
+                  "o",
+                  "vinicius"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "invest",
+                  "sua",
+                  "mes",
+                  "em",
+                  "um",
+                  "nov",
+                  "celul"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "present",
+                  "car"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "tod",
+                  "as",
+                  "cont",
+                  "do",
+                  "mes"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "transfer",
+                  "dinheir",
+                  "par",
+                  "a",
+                  "cont",
+                  "do",
+                  "amig"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "uma",
+                  "quant",
+                  "consideravel",
+                  "em",
+                  "roup"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "invest",
+                  "em",
+                  "aco",
+                  "na",
+                  "bols",
+                  "de",
+                  "valor"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "gast",
+                  "uma",
+                  "fortun",
+                  "no",
+                  "shopping"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "tod",
+                  "o",
+                  "dinheir",
+                  "da",
+                  "poupanc"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "em",
+                  "dinheir",
+                  "por",
+                  "um",
+                  "servic"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "remet",
+                  "um",
+                  "valor",
+                  "signific",
+                  "par",
+                  "o",
+                  "exterior"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "queim",
+                  "tod",
+                  "o",
+                  "salari",
+                  "em",
+                  "um",
+                  "final",
+                  "de",
+                  "seman"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "dispendi",
+                  "uma",
+                  "quant",
+                  "alta",
+                  "em",
+                  "eletron"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "dinheir",
+                  "par",
+                  "uma",
+                  "obra",
+                  "de",
+                  "arte"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "a",
+                  "vist",
+                  "por",
+                  "um",
+                  "carr",
+                  "nov"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "uma",
+                  "quant",
+                  "grand",
+                  "em",
+                  "uma",
+                  "fest"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "adiant",
+                  "por",
+                  "um",
+                  "curs"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "bilhet",
+                  "de",
+                  "lot"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "uma",
+                  "mult",
+                  "de",
+                  "transit"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "material",
+                  "de",
+                  "construca"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "uma",
+                  "assinatur",
+                  "anual",
+                  "de",
+                  "revist"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "present",
+                  "de",
+                  "aniversari"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "equip",
+                  "de",
+                  "informat"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "passagens",
+                  "aer",
+                  "par",
+                  "as",
+                  "fer"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "invest",
+                  "em",
+                  "criptomoed"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "uma",
+                  "viag",
+                  "internacional"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "reform",
+                  "na",
+                  "cas"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "nov",
+                  "videogam"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "pel",
+                  "matricul",
+                  "na",
+                  "faculdad"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "consult",
+                  "medic"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "nov",
+                  "guard",
+                  "roup"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "pel",
+                  "consert",
+                  "do",
+                  "carr"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "um",
+                  "jant",
+                  "car"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "ingress",
+                  "par",
+                  "um",
+                  "show"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "a",
+                  "academ",
+                  "anual"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "par",
+                  "ajud",
+                  "um",
+                  "amig"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "nov",
+                  "laptop"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "um",
+                  "segur",
+                  "de",
+                  "saud"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "par",
+                  "contrat",
+                  "um",
+                  "servic",
+                  "de",
+                  "streaming"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "present",
+                  "de",
+                  "natal"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "um",
+                  "passei",
+                  "turist"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "mov",
+                  "nov"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "relogi",
+                  "de",
+                  "lux"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "um",
+                  "curs",
+                  "de",
+                  "idiom"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "um",
+                  "spa"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "ingress",
+                  "par",
+                  "um",
+                  "event",
+                  "esport"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "uma",
+                  "consult",
+                  "de",
+                  "emergenc"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "acessori",
+                  "de",
+                  "mod"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "nov",
+                  "tablet"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "uma",
+                  "fest",
+                  "de",
+                  "casament"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "jog",
+                  "de",
+                  "tabuleir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "equip",
+                  "de",
+                  "ginast"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "um",
+                  "treinament",
+                  "profissional"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "um",
+                  "restaur",
+                  "chiqu"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "uma",
+                  "biciclet",
+                  "nov"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "uma",
+                  "tatuag"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "brinqued",
+                  "par",
+                  "os",
+                  "filh"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "uma",
+                  "nov",
+                  "cam",
+                  "fotograf"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "um",
+                  "tratament",
+                  "de",
+                  "belez"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "plant",
+                  "e",
+                  "jardinag"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "ingress",
+                  "par",
+                  "o",
+                  "cinem"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "uma",
+                  "assinatur",
+                  "de",
+                  "jornal"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "uma",
+                  "obra",
+                  "de",
+                  "caridad"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "uma",
+                  "maquin",
+                  "de",
+                  "caf"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "um",
+                  "servic",
+                  "de",
+                  "entreg"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "um",
+                  "nov",
+                  "sof"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "uma",
+                  "viag",
+                  "de",
+                  "cruzeir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "uma",
+                  "cirurg",
+                  "estet"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "um",
+                  "club",
+                  "de",
+                  "leitur"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "nov",
+                  "televisor"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "um",
+                  "curs",
+                  "onlin"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "uma",
+                  "academ",
+                  "de",
+                  "ginast"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "uma",
+                  "assinatur",
+                  "de",
+                  "streaming",
+                  "de",
+                  "music"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "um",
+                  "servic",
+                  "de",
+                  "manutenca"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "uma",
+                  "consultor",
+                  "financeir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "nov",
+                  "par",
+                  "de",
+                  "sapat"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "uma",
+                  "oficin",
+                  "de",
+                  "culin"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "uma",
+                  "viag",
+                  "de",
+                  "aventur"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "um",
+                  "ingress",
+                  "par",
+                  "o",
+                  "teatr"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "um",
+                  "pacot",
+                  "de",
+                  "tv",
+                  "a",
+                  "cab"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "uma",
+                  "nov",
+                  "maquin",
+                  "de",
+                  "lav"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "uma",
+                  "assinatur",
+                  "de",
+                  "revist"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "uma",
+                  "consult",
+                  "de",
+                  "nutricion"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "material",
+                  "escol"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "uma",
+                  "nov",
+                  "cortin",
+                  "par",
+                  "a",
+                  "sal"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "um",
+                  "servic",
+                  "de",
+                  "pintur"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "um",
+                  "curs",
+                  "de",
+                  "fotograf"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "uma",
+                  "nov",
+                  "geladeir"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "um",
+                  "servic",
+                  "de",
+                  "encan"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "uma",
+                  "assinatur",
+                  "de",
+                  "academ"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "uma",
+                  "nov",
+                  "estant",
+                  "de",
+                  "livr"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "um",
+                  "servic",
+                  "de",
+                  "eletric"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "um",
+                  "tratament",
+                  "odontolog"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "uma",
+                  "assinatur",
+                  "de",
+                  "jog",
+                  "onlin"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "uma",
+                  "faxin",
+                  "residencial"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "desembols",
+                  "em",
+                  "uma",
+                  "assinatur",
+                  "de",
+                  "tv",
+                  "por",
+                  "assinatur"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "compr",
+                  "uma",
+                  "nov",
+                  "cam"
+                ]
+              },
+              {
+                "intent": "gastei",
+                "tokens": [
+                  "pag",
+                  "por",
+                  "uma",
+                  "consult",
+                  "de",
+                  "psicolog"
+                ]
               }
             ],
             "features": {
-              "receb": 5,
-              "um": 10,
-              "pagament": 10,
-              "por": 6,
-              "trabalh": 1,
+              "receb": 13,
+              "meu": 16,
+              "salari": 6,
+              "hoj": 1,
+              "o": 21,
+              "pix": 5,
+              "de": 98,
+              "um": 74,
+              "amig": 7,
+              "pagament": 67,
+              "por": 46,
+              "trabalh": 2,
               "freelanc": 1,
               "obtiv": 1,
               "bonus": 1,
-              "de": 14,
-              "final": 1,
+              "final": 2,
               "ano": 1,
               "aceit": 1,
-              "pix": 1,
-              "amig": 1,
-              "fui": 1,
-              "reembols": 1,
-              "despes": 1,
-              "viag": 1,
-              "ganh": 1,
+              "fui": 4,
+              "reembols": 2,
+              "despes": 2,
+              "viag": 4,
+              "ganh": 4,
               "premi": 1,
-              "em": 15,
-              "dinheir": 5,
+              "em": 115,
+              "dinheir": 33,
               "concurs": 1,
               "arrecad": 1,
-              "fund": 1,
+              "fund": 8,
               "atrav": 1,
-              "uma": 6,
+              "uma": 52,
               "vaquinh": 1,
-              "onlin": 2,
+              "onlin": 15,
               "herd": 1,
-              "quant": 1,
+              "quant": 4,
               "parent": 1,
               "distant": 1,
               "cobr": 1,
               "div": 1,
               "antig": 1,
               "vend": 3,
-              "meu": 5,
-              "carr": 1,
+              "carr": 3,
               "usad": 1,
               "alugu": 1,
-              "minh": 7,
+              "minh": 21,
               "propriedad": 1,
-              "e": 2,
-              "o": 4,
+              "e": 3,
               "primeir": 1,
               "negoc": 1,
-              "salari": 2,
               "aument": 1,
               "fatur": 1,
-              "com": 12,
-              "a": 2,
-              "aco": 2,
+              "com": 88,
+              "a": 17,
+              "aco": 5,
               "comissa": 1,
               "consegu": 1,
-              "bols": 1,
+              "bols": 2,
               "estud": 1,
               "tiv": 1,
               "retorn": 1,
-              "invest": 2,
+              "invest": 7,
               "doaca": 1,
               "gener": 1,
-              "par": 3,
+              "par": 31,
               "projet": 1,
-              "envi": 1,
-              "cont": 2,
-              "vinicius": 1,
-              "eu": 20,
-              "despend": 3,
-              "mes": 1,
-              "carta": 5,
-              "credit": 1,
-              "esgot": 2,
-              "poupanc": 1,
-              "viv": 1,
-              "via": 2,
-              "transferenc": 2,
-              "banc": 1,
-              "esbanj": 2,
-              "no": 3,
-              "shopping": 1,
-              "debit": 1,
-              "dilapid": 1,
-              "parcel": 2,
-              "desfiz": 1,
-              "me": 1,
-              "econom": 2,
-              "chequ": 2,
-              "despach": 1,
-              "rapid": 1,
-              "mei": 1,
-              "aplic": 1,
-              "dissip": 4,
-              "fortun": 1,
-              "eletron": 1,
-              "fisic": 1,
-              "viagens": 1,
-              "pre": 1,
-              "pag": 1,
-              "na": 3,
-              "bal": 1,
-              "espec": 1,
-              "desembols": 2,
-              "loj": 1,
-              "utiliz": 2,
-              "aproximaca": 1,
-              "esvazi": 1,
-              "carteir": 1,
-              "not": 1,
-              "gast": 1,
-              "restaur": 1,
-              "contactless": 1,
-              "transfer": 1,
-              "del": 1,
-              "internet": 1,
-              "banking": 1,
-              "gadgets": 1,
-              "qr": 1,
-              "cod": 1,
-              "compr": 1,
-              "virtual": 1,
-              "roup": 1,
-              "fest": 1,
-              "merc": 1
+              "recompens": 1,
+              "temporari": 1,
+              "bonificaca": 1,
+              "desempenh": 4,
+              "apost": 1,
+              "produt": 1,
+              "devolv": 1,
+              "remuner": 1,
+              "consultor": 2,
+              "mes": 6,
+              "dos": 1,
+              "meus": 1,
+              "pais": 1,
+              "gratificaca": 1,
+              "bons": 1,
+              "servic": 9,
+              "indenizaca": 1,
+              "segur": 2,
+              "subsidi": 1,
+              "do": 6,
+              "govern": 1,
+              "lot": 2,
+              "pag": 38,
+              "jardinag": 2,
+              "valor": 4,
+              "heranc": 1,
+              "cont": 8,
+              "eu": 30,
+              "despend": 11,
+              "carta": 36,
+              "credit": 15,
+              "esgot": 4,
+              "poupanc": 3,
+              "viv": 3,
+              "via": 12,
+              "transferenc": 16,
+              "banc": 10,
+              "esbanj": 4,
+              "no": 15,
+              "shopping": 4,
+              "debit": 14,
+              "dilapid": 2,
+              "parcel": 10,
+              "desfiz": 2,
+              "me": 2,
+              "econom": 6,
+              "chequ": 6,
+              "despach": 6,
+              "rapid": 3,
+              "mei": 3,
+              "aplic": 3,
+              "dissip": 8,
+              "fortun": 4,
+              "eletron": 9,
+              "fisic": 3,
+              "viagens": 3,
+              "pre": 6,
+              "na": 20,
+              "bal": 3,
+              "espec": 3,
+              "desembols": 37,
+              "loj": 3,
+              "utiliz": 9,
+              "aproximaca": 3,
+              "esvazi": 2,
+              "carteir": 3,
+              "not": 5,
+              "gast": 13,
+              "restaur": 4,
+              "contactless": 3,
+              "transfer": 3,
+              "del": 3,
+              "internet": 3,
+              "banking": 3,
+              "gadgets": 3,
+              "qr": 3,
+              "cod": 3,
+              "compr": 40,
+              "virtual": 3,
+              "roup": 7,
+              "fest": 5,
+              "merc": 3,
+              "pagu": 11,
+              "automat": 5,
+              "present": 8,
+              "aluguel": 3,
+              "academ": 6,
+              "mensal": 5,
+              "cinem": 4,
+              "passagens": 4,
+              "aer": 4,
+              "consult": 7,
+              "medic": 4,
+              "exterior": 4,
+              "internacional": 4,
+              "tud": 3,
+              "feir": 3,
+              "jant": 3,
+              "livr": 3,
+              "usand": 2,
+              "mov": 3,
+              "nov": 19,
+              "smartphon": 2,
+              "da": 3,
+              "escol": 5,
+              "bolet": 2,
+              "bancari": 2,
+              "ingress": 6,
+              "show": 3,
+              "supermerc": 2,
+              "eletrodomest": 2,
+              "gasolin": 2,
+              "invern": 2,
+              "farmac": 2,
+              "material": 4,
+              "aniversari": 3,
+              "artig": 2,
+              "esport": 3,
+              "assinatur": 10,
+              "streaming": 4,
+              "decoraca": 2,
+              "cas": 3,
+              "acessori": 3,
+              "mod": 3,
+              "jog": 4,
+              "remet": 4,
+              "vinicius": 2,
+              "dispens": 1,
+              "apliqu": 1,
+              "capital": 4,
+              "estorriqu": 1,
+              "despej": 1,
+              "liquid": 1,
+              "envi": 3,
+              "derram": 1,
+              "drenei": 1,
+              "injet": 2,
+              "torr": 2,
+              "efetu": 2,
+              "desocup": 1,
+              "destin": 1,
+              "desbarat": 1,
+              "desperdic": 1,
+              "aloqu": 1,
+              "liquidifiqu": 1,
+              "adquir": 6,
+              "alinh": 1,
+              "consum": 1,
+              "aquir": 1,
+              "compens": 1,
+              "queim": 2,
+              "quit": 4,
+              "direcion": 2,
+              "descarregu": 1,
+              "empenh": 1,
+              "desloqu": 1,
+              "rea": 1,
+              "sua": 1,
+              "celul": 1,
+              "car": 2,
+              "tod": 3,
+              "as": 2,
+              "consideravel": 1,
+              "signific": 1,
+              "seman": 1,
+              "dispendi": 1,
+              "alta": 1,
+              "obra": 2,
+              "arte": 1,
+              "vist": 1,
+              "grand": 1,
+              "adiant": 1,
+              "curs": 4,
+              "bilhet": 1,
+              "mult": 1,
+              "transit": 1,
+              "construca": 1,
+              "anual": 2,
+              "revist": 2,
+              "equip": 2,
+              "informat": 1,
+              "fer": 1,
+              "criptomoed": 1,
+              "reform": 1,
+              "videogam": 1,
+              "pel": 2,
+              "matricul": 1,
+              "faculdad": 1,
+              "guard": 1,
+              "consert": 1,
+              "ajud": 1,
+              "laptop": 1,
+              "saud": 1,
+              "contrat": 1,
+              "natal": 1,
+              "passei": 1,
+              "turist": 1,
+              "relogi": 1,
+              "lux": 1,
+              "idiom": 1,
+              "spa": 1,
+              "event": 1,
+              "emergenc": 1,
+              "tablet": 1,
+              "casament": 1,
+              "tabuleir": 1,
+              "ginast": 2,
+              "treinament": 1,
+              "profissional": 1,
+              "chiqu": 1,
+              "biciclet": 1,
+              "tatuag": 1,
+              "brinqued": 1,
+              "os": 1,
+              "filh": 1,
+              "cam": 2,
+              "fotograf": 2,
+              "tratament": 2,
+              "belez": 1,
+              "plant": 1,
+              "jornal": 1,
+              "caridad": 1,
+              "maquin": 2,
+              "caf": 1,
+              "entreg": 1,
+              "sof": 1,
+              "cruzeir": 1,
+              "cirurg": 1,
+              "estet": 1,
+              "club": 1,
+              "leitur": 1,
+              "televisor": 1,
+              "music": 1,
+              "manutenca": 1,
+              "financeir": 1,
+              "sapat": 1,
+              "oficin": 1,
+              "culin": 1,
+              "aventur": 1,
+              "teatr": 1,
+              "pacot": 1,
+              "tv": 2,
+              "cab": 1,
+              "lav": 1,
+              "nutricion": 1,
+              "cortin": 1,
+              "sal": 1,
+              "pintur": 1,
+              "geladeir": 1,
+              "encan": 1,
+              "estant": 1,
+              "eletric": 1,
+              "odontolog": 1,
+              "faxin": 1,
+              "residencial": 1,
+              "psicolog": 1
             },
             "isEditing": false,
             "className": "BrainNLU",
@@ -808,25 +4427,29 @@
               "labels": [],
               "network": {
                 "sizes": [
-                  125,
+                  322,
                   3
                 ],
                 "layers": [
                   {
                     "receb": {},
+                    "meu": {},
+                    "salari": {},
+                    "hoj": {},
+                    "o": {},
+                    "pix": {},
+                    "de": {},
                     "um": {},
+                    "amig": {},
                     "pagament": {},
                     "por": {},
                     "trabalh": {},
                     "freelanc": {},
                     "obtiv": {},
                     "bonus": {},
-                    "de": {},
                     "final": {},
                     "ano": {},
                     "aceit": {},
-                    "pix": {},
-                    "amig": {},
                     "fui": {},
                     "reembols": {},
                     "despes": {},
@@ -850,17 +4473,14 @@
                     "div": {},
                     "antig": {},
                     "vend": {},
-                    "meu": {},
                     "carr": {},
                     "usad": {},
                     "alugu": {},
                     "minh": {},
                     "propriedad": {},
                     "e": {},
-                    "o": {},
                     "primeir": {},
                     "negoc": {},
-                    "salari": {},
                     "aument": {},
                     "fatur": {},
                     "com": {},
@@ -877,12 +4497,34 @@
                     "gener": {},
                     "par": {},
                     "projet": {},
-                    "envi": {},
-                    "cont": {},
-                    "vinicius": {},
+                    "recompens": {},
+                    "temporari": {},
+                    "bonificaca": {},
+                    "desempenh": {},
+                    "apost": {},
+                    "produt": {},
+                    "devolv": {},
+                    "remuner": {},
+                    "consultor": {},
+                    "mes": {},
+                    "dos": {},
+                    "meus": {},
+                    "pais": {},
+                    "gratificaca": {},
+                    "bons": {},
+                    "servic": {},
+                    "indenizaca": {},
+                    "segur": {},
+                    "subsidi": {},
+                    "do": {},
+                    "govern": {},
+                    "lot": {},
+                    "pag": {},
+                    "jardinag": {},
+                    "valor": {},
+                    "heranc": {},
                     "eu": {},
                     "despend": {},
-                    "mes": {},
                     "carta": {},
                     "credit": {},
                     "esgot": {},
@@ -911,7 +4553,6 @@
                     "fisic": {},
                     "viagens": {},
                     "pre": {},
-                    "pag": {},
                     "na": {},
                     "bal": {},
                     "espec": {},
@@ -926,6 +4567,7 @@
                     "restaur": {},
                     "contactless": {},
                     "transfer": {},
+                    "cont": {},
                     "del": {},
                     "internet": {},
                     "banking": {},
@@ -937,348 +4579,923 @@
                     "roup": {},
                     "fest": {},
                     "merc": {},
+                    "pagu": {},
+                    "automat": {},
+                    "present": {},
+                    "aluguel": {},
+                    "academ": {},
+                    "mensal": {},
+                    "cinem": {},
+                    "passagens": {},
+                    "aer": {},
+                    "consult": {},
+                    "medic": {},
+                    "exterior": {},
+                    "internacional": {},
+                    "tud": {},
+                    "feir": {},
+                    "jant": {},
+                    "livr": {},
+                    "usand": {},
+                    "mov": {},
+                    "nov": {},
+                    "smartphon": {},
+                    "da": {},
+                    "escol": {},
+                    "bolet": {},
+                    "bancari": {},
+                    "ingress": {},
+                    "show": {},
+                    "supermerc": {},
+                    "eletrodomest": {},
+                    "gasolin": {},
+                    "invern": {},
+                    "farmac": {},
+                    "material": {},
+                    "aniversari": {},
+                    "artig": {},
+                    "esport": {},
+                    "assinatur": {},
+                    "streaming": {},
+                    "decoraca": {},
+                    "cas": {},
+                    "acessori": {},
+                    "mod": {},
+                    "jog": {},
+                    "remet": {},
+                    "vinicius": {},
+                    "dispens": {},
+                    "apliqu": {},
+                    "capital": {},
+                    "estorriqu": {},
+                    "despej": {},
+                    "liquid": {},
+                    "envi": {},
+                    "derram": {},
+                    "drenei": {},
+                    "injet": {},
+                    "torr": {},
+                    "efetu": {},
+                    "desocup": {},
+                    "destin": {},
+                    "desbarat": {},
+                    "desperdic": {},
+                    "aloqu": {},
+                    "liquidifiqu": {},
+                    "adquir": {},
+                    "alinh": {},
+                    "consum": {},
+                    "aquir": {},
+                    "compens": {},
+                    "queim": {},
+                    "quit": {},
+                    "direcion": {},
+                    "descarregu": {},
+                    "empenh": {},
+                    "desloqu": {},
+                    "rea": {},
+                    "sua": {},
+                    "celul": {},
+                    "car": {},
+                    "tod": {},
+                    "as": {},
+                    "consideravel": {},
+                    "signific": {},
+                    "seman": {},
+                    "dispendi": {},
+                    "alta": {},
+                    "obra": {},
+                    "arte": {},
+                    "vist": {},
+                    "grand": {},
+                    "adiant": {},
+                    "curs": {},
+                    "bilhet": {},
+                    "mult": {},
+                    "transit": {},
+                    "construca": {},
+                    "anual": {},
+                    "revist": {},
+                    "equip": {},
+                    "informat": {},
+                    "fer": {},
+                    "criptomoed": {},
+                    "reform": {},
+                    "videogam": {},
+                    "pel": {},
+                    "matricul": {},
+                    "faculdad": {},
+                    "guard": {},
+                    "consert": {},
+                    "ajud": {},
+                    "laptop": {},
+                    "saud": {},
+                    "contrat": {},
+                    "natal": {},
+                    "passei": {},
+                    "turist": {},
+                    "relogi": {},
+                    "lux": {},
+                    "idiom": {},
+                    "spa": {},
+                    "event": {},
+                    "emergenc": {},
+                    "tablet": {},
+                    "casament": {},
+                    "tabuleir": {},
+                    "ginast": {},
+                    "treinament": {},
+                    "profissional": {},
+                    "chiqu": {},
+                    "biciclet": {},
+                    "tatuag": {},
+                    "brinqued": {},
+                    "os": {},
+                    "filh": {},
+                    "cam": {},
+                    "fotograf": {},
+                    "tratament": {},
+                    "belez": {},
+                    "plant": {},
+                    "jornal": {},
+                    "caridad": {},
+                    "maquin": {},
+                    "caf": {},
+                    "entreg": {},
+                    "sof": {},
+                    "cruzeir": {},
+                    "cirurg": {},
+                    "estet": {},
+                    "club": {},
+                    "leitur": {},
+                    "televisor": {},
+                    "music": {},
+                    "manutenca": {},
+                    "financeir": {},
+                    "sapat": {},
+                    "oficin": {},
+                    "culin": {},
+                    "aventur": {},
+                    "teatr": {},
+                    "pacot": {},
+                    "tv": {},
+                    "cab": {},
+                    "lav": {},
+                    "nutricion": {},
+                    "cortin": {},
+                    "sal": {},
+                    "pintur": {},
+                    "geladeir": {},
+                    "encan": {},
+                    "estant": {},
+                    "eletric": {},
+                    "odontolog": {},
+                    "faxin": {},
+                    "residencial": {},
+                    "psicolog": {},
                     "nonefeature": {}
                   },
                   {
                     "recebi": {
-                      "bias": 3.252155423,
+                      "bias": 1.974141384,
                       "weights": {
-                        "receb": 3.06566,
-                        "um": 3.577569723,
-                        "pagament": 0.664607227,
-                        "por": 0.293761611,
-                        "trabalh": 0.820988476,
-                        "freelanc": 0.820988476,
-                        "obtiv": 0.66440922,
-                        "bonus": 0.66440922,
-                        "de": 3.010224104,
-                        "final": 0.66440922,
-                        "ano": 0.66440922,
-                        "aceit": 0.885472476,
-                        "pix": 0.885472476,
-                        "amig": 0.885472476,
-                        "fui": 1.483826995,
-                        "reembols": 1.483826995,
-                        "despes": 1.483826995,
-                        "viag": 1.483826995,
-                        "ganh": 1.937170744,
-                        "premi": 1.937170744,
-                        "em": 0.107233882,
-                        "dinheir": -0.259822667,
-                        "concurs": 1.937170744,
-                        "arrecad": 0.580758154,
-                        "fund": 0.580758154,
-                        "atrav": 0.580758154,
-                        "uma": 3.329600096,
-                        "vaquinh": 0.580758154,
-                        "onlin": 0.580758154,
-                        "herd": -0.167396501,
-                        "quant": -0.167396501,
-                        "parent": -0.167396501,
-                        "distant": -0.167396501,
-                        "cobr": 1.965611577,
-                        "div": 1.965611577,
-                        "antig": 1.965611577,
-                        "vend": 2.974132299,
-                        "meu": 2.177214622,
-                        "carr": 2.03752923,
-                        "usad": 2.03752923,
-                        "alugu": 1.431610107,
-                        "minh": -0.76457423,
-                        "propriedad": 1.431610107,
-                        "e": 2.258486986,
-                        "o": -0.281910747,
-                        "primeir": 1.431610107,
-                        "negoc": 0.826876879,
-                        "salari": 0.364145428,
-                        "aument": 0.826876879,
-                        "fatur": 1.359663248,
-                        "com": -0.465352297,
-                        "a": 1.359663248,
-                        "aco": 0.997333109,
-                        "comissa": -0.423062593,
-                        "consegu": 0.964443505,
-                        "bols": 0.964443505,
-                        "estud": 0.964443505,
-                        "tiv": 1.001905799,
-                        "retorn": 1.001905799,
-                        "invest": 0.639575303,
-                        "doaca": 0.409245998,
-                        "gener": 0.409245998,
-                        "par": -0.566171169,
-                        "projet": 0.409245998,
-                        "envi": -0.975417018,
-                        "cont": -0.975417018,
-                        "vinicius": -0.975417018,
-                        "eu": -5.242943764,
-                        "despend": -1.191309571,
-                        "mes": -1.191309571,
-                        "carta": -1.825016141,
-                        "credit": -1.191309571,
-                        "esgot": -0.63201201,
-                        "poupanc": -0.63201201,
-                        "viv": -0.63201201,
-                        "via": -0.362330496,
-                        "transferenc": -0.362330496,
-                        "banc": -0.362330496,
-                        "esbanj": -0.63370651,
-                        "no": -0.63370651,
-                        "shopping": -0.63370651,
-                        "debit": -0.63370651,
-                        "dilapid": -0.462731689,
-                        "parcel": -0.462731689,
-                        "desfiz": -0.372862875,
-                        "me": -0.372862875,
-                        "econom": -0.372862875,
-                        "chequ": -0.372862875,
-                        "despach": -1.564981461,
-                        "rapid": -1.564981461,
-                        "mei": -1.564981461,
-                        "aplic": -1.564981461,
-                        "na": -0.023010109,
-                        "desembols": -0.023010109,
-                        "loj": -0.023010109,
-                        "utiliz": -0.023010109,
-                        "aproximaca": -0.023010109,
-                        "nonefeature": -3.043816566
+                        "receb": 7.048016071,
+                        "meu": 2.666592836,
+                        "salari": -0.877667427,
+                        "hoj": 1.688917279,
+                        "o": -2.3787992,
+                        "pix": 1.280206919,
+                        "de": 1.638657212,
+                        "um": 2.145282507,
+                        "amig": 0.792513132,
+                        "pagament": -1.232898712,
+                        "por": -1.991428614,
+                        "trabalh": 2.31096077,
+                        "freelanc": 2.245931387,
+                        "obtiv": 2.080034494,
+                        "bonus": 2.080034494,
+                        "final": 0.501821518,
+                        "ano": 2.080034494,
+                        "aceit": 4.66918993,
+                        "fui": 7.931005478,
+                        "reembols": 1.379401445,
+                        "despes": 1.959142089,
+                        "viag": -0.390916079,
+                        "ganh": 7.833780289,
+                        "premi": 2.592620373,
+                        "em": -4.159666538,
+                        "dinheir": -0.478775173,
+                        "concurs": 2.592620373,
+                        "arrecad": 1.633117557,
+                        "fund": 1.365381241,
+                        "atrav": 1.633117557,
+                        "uma": 3.068415403,
+                        "vaquinh": 1.633117557,
+                        "onlin": -0.445945889,
+                        "herd": 1.291550159,
+                        "quant": -0.20114316,
+                        "parent": 1.291550159,
+                        "distant": 1.291550159,
+                        "cobr": 2.485815287,
+                        "div": 2.485815287,
+                        "antig": 2.485815287,
+                        "vend": 4.210794449,
+                        "carr": 1.183476925,
+                        "usad": 2.464997292,
+                        "alugu": 1.860836983,
+                        "minh": -0.668590665,
+                        "propriedad": 1.860836983,
+                        "e": 2.175621986,
+                        "primeir": 1.860836983,
+                        "negoc": 0.946047008,
+                        "aument": 0.946047008,
+                        "fatur": 3.555757999,
+                        "com": -1.850262284,
+                        "a": 1.294639945,
+                        "aco": 1.67627275,
+                        "comissa": -1.809939981,
+                        "consegu": 2.388586044,
+                        "bols": 1.041617036,
+                        "estud": 2.388586044,
+                        "tiv": 2.957292557,
+                        "retorn": 2.957292557,
+                        "invest": 0.827337503,
+                        "doaca": 0.802569389,
+                        "gener": 0.802569389,
+                        "par": -4.664873123,
+                        "projet": 0.802569389,
+                        "recompens": 0.06502042,
+                        "temporari": 0.06502042,
+                        "bonificaca": 1.200427651,
+                        "desempenh": 1.200427651,
+                        "apost": 4.262103081,
+                        "produt": -0.84274894,
+                        "devolv": -0.84274894,
+                        "remuner": 0.758934021,
+                        "consultor": 0.758934021,
+                        "mes": -0.827280045,
+                        "dos": 0.412235707,
+                        "meus": 0.412235707,
+                        "pais": 0.412235707,
+                        "gratificaca": -0.089082837,
+                        "bons": -0.089082837,
+                        "servic": 1.793258786,
+                        "indenizaca": -0.405133635,
+                        "segur": -0.824097335,
+                        "subsidi": 0.52927953,
+                        "do": 0.274000734,
+                        "govern": 0.52927953,
+                        "lot": -0.376334846,
+                        "pag": -5.244558811,
+                        "jardinag": 4.253641605,
+                        "valor": -1.182264328,
+                        "heranc": 0.87616396,
+                        "eu": -5.36083746,
+                        "despend": -0.999406815,
+                        "carta": -2.526667595,
+                        "credit": -1.434420228,
+                        "esgot": -0.646714032,
+                        "poupanc": -0.646714032,
+                        "viv": -0.646714032,
+                        "via": -3.630838156,
+                        "transferenc": -0.962215841,
+                        "banc": -0.962215841,
+                        "esbanj": -0.963615119,
+                        "no": -1.974710703,
+                        "shopping": -1.974710703,
+                        "debit": -1.162571073,
+                        "dilapid": -1.471631765,
+                        "parcel": -1.934421182,
+                        "desfiz": -0.812986314,
+                        "me": -0.812986314,
+                        "econom": -0.812986314,
+                        "chequ": -0.812986314,
+                        "despach": -3.72702527,
+                        "rapid": -2.198366165,
+                        "mei": -2.198366165,
+                        "aplic": -2.198366165,
+                        "dissip": -0.056020502,
+                        "fortun": -1.009094,
+                        "eletron": -1.110224366,
+                        "na": -2.311116695,
+                        "bal": -0.056020502,
+                        "espec": -0.056020502,
+                        "desembols": -3.612470865,
+                        "loj": -0.645120382,
+                        "utiliz": -0.71544385,
+                        "aproximaca": -0.645120382,
+                        "gast": -1.079976678,
+                        "transfer": -0.421178848,
+                        "cont": -0.491502315,
+                        "del": -0.165899023,
+                        "internet": -0.165899023,
+                        "banking": -0.165899023,
+                        "compr": -6.307395458,
+                        "roup": -0.706772923,
+                        "fest": -0.667598844,
+                        "pagu": -1.177765608,
+                        "automat": -0.070323505,
+                        "present": -2.143119097,
+                        "aluguel": -0.114443518,
+                        "academ": -0.263010383,
+                        "mensal": -0.630867302,
+                        "passagens": -0.150050506,
+                        "aer": -0.150050506,
+                        "consult": -1.252638102,
+                        "medic": -0.898962736,
+                        "internacional": -1.139878869,
+                        "jant": -0.126631096,
+                        "livr": -0.315256715,
+                        "usand": -0.315256715,
+                        "nov": -1.713736415,
+                        "smartphon": -0.010360857,
+                        "da": -0.367856979,
+                        "escol": -0.367856979,
+                        "bolet": -0.367856979,
+                        "bancari": -0.367856979,
+                        "ingress": -0.173429623,
+                        "show": -0.173429623,
+                        "aniversari": -1.751804113,
+                        "assinatur": -1.008315206,
+                        "streaming": -0.597510755,
+                        "acessori": -0.002733409,
+                        "mod": -0.002733409,
+                        "jog": -0.003776186,
+                        "remet": -0.71146059,
+                        "vinicius": -0.71146059,
+                        "estorriqu": -0.002001473,
+                        "despej": -0.462789565,
+                        "envi": -1.403764486,
+                        "efetu": -0.017024057,
+                        "aloqu": -0.265003115,
+                        "liquidifiqu": -0.070323505,
+                        "adquir": -1.000246644,
+                        "alinh": -0.263010383,
+                        "compens": -0.159702748,
+                        "queim": -1.578205824,
+                        "quit": -0.170426011,
+                        "desloqu": -0.002733409,
+                        "sua": -0.240107626,
+                        "celul": -0.240107626,
+                        "car": -0.30254811,
+                        "tod": -1.578205824,
+                        "consideravel": -0.706772923,
+                        "seman": -1.578205824,
+                        "dispendi": -0.77433902,
+                        "alta": -0.77433902,
+                        "obra": -0.507977903,
+                        "arte": -0.399030119,
+                        "vist": -1.281516194,
+                        "grand": -0.011577555,
+                        "adiant": -0.447119921,
+                        "curs": -0.825226784,
+                        "bilhet": -1.444442034,
+                        "mult": -1.503198743,
+                        "transit": -1.503198743,
+                        "anual": -0.949918568,
+                        "revist": -0.949918568,
+                        "equip": -0.434446007,
+                        "ajud": -0.232415453,
+                        "saud": -0.418962955,
+                        "contrat": -0.597510755,
+                        "relogi": -0.678506672,
+                        "lux": -0.678506672,
+                        "idiom": -0.378106952,
+                        "emergenc": -0.353675693,
+                        "casament": -0.656021237,
+                        "ginast": -0.434446007,
+                        "biciclet": -0.107416317,
+                        "tatuag": -0.009469816,
+                        "cam": -0.061806507,
+                        "fotograf": -0.061806507,
+                        "tratament": -0.251254469,
+                        "belez": -0.251254469,
+                        "plant": -0.631265223,
+                        "jornal": -0.054620583,
+                        "caridad": -0.108947806,
+                        "maquin": -0.606540263,
+                        "caf": -0.606540263,
+                        "entreg": -0.836509764,
+                        "cruzeir": -1.176322699,
+                        "manutenca": -0.582444668,
+                        "oficin": -0.090119839,
+                        "culin": -0.090119839,
+                        "aventur": -0.296862274,
+                        "pacot": -0.190561876,
+                        "tv": -0.190561876,
+                        "cab": -0.190561876,
+                        "pintur": -0.350186557,
+                        "geladeir": -0.012529006,
+                        "encan": -0.320548654,
+                        "eletric": -0.315351844,
+                        "nonefeature": -1.974137664
                       }
                     },
                     "gastei": {
-                      "bias": 0.92632608,
+                      "bias": 7.34473545,
                       "weights": {
-                        "receb": -1.932357192,
-                        "um": -1.516616702,
-                        "pagament": 0.432962835,
-                        "por": 0.759448469,
-                        "trabalh": -0.432307541,
-                        "freelanc": -0.432307541,
-                        "obtiv": -0.500683129,
-                        "bonus": -0.500683129,
-                        "de": -0.460251302,
-                        "final": -0.500683129,
-                        "ano": -0.500683129,
-                        "aceit": -0.436718762,
-                        "pix": -0.436718762,
-                        "amig": -0.436718762,
-                        "fui": -0.55688566,
-                        "reembols": -0.55688566,
-                        "despes": -0.55688566,
-                        "viag": -0.55688566,
-                        "ganh": -0.711038649,
-                        "premi": -0.711038649,
-                        "em": 1.994258642,
-                        "dinheir": 0.409318298,
-                        "concurs": -0.711038649,
-                        "arrecad": -0.286994576,
-                        "fund": -0.286994576,
-                        "atrav": -0.286994576,
-                        "uma": -0.967614472,
-                        "vaquinh": -0.286994576,
-                        "onlin": -0.235843897,
-                        "herd": -0.082899742,
-                        "quant": -0.082899742,
-                        "parent": -0.082899742,
-                        "distant": -0.082899742,
-                        "cobr": -0.160002872,
-                        "div": -0.160002872,
-                        "antig": -0.160002872,
-                        "vend": -1.102259755,
-                        "meu": 0.376726329,
-                        "carr": -0.417858392,
-                        "usad": -0.417858392,
-                        "alugu": -0.649384439,
-                        "minh": 1.406755447,
-                        "propriedad": -0.649384439,
-                        "e": -1.225654125,
-                        "o": 2.054379463,
-                        "primeir": -0.649384439,
-                        "negoc": -0.576269746,
-                        "salari": 0.515435398,
-                        "aument": -0.576269746,
-                        "fatur": -0.684401393,
-                        "com": 1.137351036,
-                        "a": -0.623478711,
-                        "aco": 0.017594147,
-                        "consegu": -0.163321927,
-                        "bols": -0.163321927,
-                        "estud": -0.163321927,
-                        "tiv": -0.213743284,
-                        "retorn": -0.213743284,
-                        "invest": 0.488252163,
-                        "doaca": -0.274395436,
-                        "gener": -0.274395436,
-                        "par": 2.20578742,
-                        "projet": -0.274395436,
-                        "envi": 2.419257402,
-                        "cont": 2.480182886,
-                        "vinicius": 2.419257402,
-                        "eu": 6.477964401,
-                        "despend": 0.514563143,
-                        "mes": 0.494248152,
-                        "carta": 1.569094777,
-                        "credit": 0.494248152,
-                        "esgot": 0.517285109,
-                        "poupanc": 0.405925095,
-                        "viv": 0.405925095,
-                        "via": 0.762918055,
-                        "transferenc": 1.167470098,
-                        "banc": 0.701995611,
-                        "esbanj": 0.594922006,
-                        "no": 0.808224618,
-                        "shopping": 0.55354476,
-                        "debit": 0.55354476,
-                        "dilapid": 1.091704965,
-                        "parcel": 1.133082986,
-                        "desfiz": 0.556830049,
-                        "me": 0.556830049,
-                        "econom": 0.668190122,
-                        "chequ": 0.405370474,
-                        "despach": 0.860774577,
-                        "rapid": 0.860774577,
-                        "mei": 0.860774577,
-                        "aplic": 0.860774577,
-                        "dissip": 0.476662129,
-                        "fortun": 0.465475202,
-                        "eletron": 0.465475202,
-                        "fisic": 0.111360185,
-                        "viagens": -0.042231422,
-                        "pre": -0.042231422,
-                        "pag": -0.042231422,
-                        "na": 0.785357356,
-                        "bal": 0.111495785,
-                        "espec": 0.111495785,
-                        "desembols": 0.567618132,
-                        "loj": 0.825320721,
-                        "utiliz": 0.866698444,
-                        "aproximaca": 0.825320721,
-                        "esvazi": 0.022302,
-                        "carteir": 0.022302,
-                        "not": 0.022302,
-                        "gast": 0.512382329,
-                        "restaur": 0.512382329,
-                        "contactless": 0.512382329,
-                        "transfer": 0.060922738,
-                        "del": 0.060922738,
-                        "internet": 0.060922738,
-                        "banking": 0.060922738,
-                        "gadgets": 0.062546574,
-                        "qr": 0.062546574,
-                        "cod": 0.062546574,
-                        "compr": 0.051150609,
-                        "virtual": 0.051150609,
-                        "roup": 0.041377384,
-                        "fest": -0.1514595,
-                        "merc": -0.257702261,
-                        "nonefeature": -0.893080771
+                        "receb": -8.636425018,
+                        "meu": -0.4127042,
+                        "salari": 0.47441113,
+                        "hoj": -1.994488955,
+                        "o": 0.839671075,
+                        "pix": -2.262607336,
+                        "de": 0.126312897,
+                        "um": 0.025636792,
+                        "amig": 0.191740587,
+                        "pagament": -1.348747611,
+                        "por": -0.403045446,
+                        "trabalh": -1.336911559,
+                        "freelanc": -1.175909877,
+                        "obtiv": -2.139801741,
+                        "bonus": -2.139801741,
+                        "final": -1.307388186,
+                        "ano": -2.139801741,
+                        "aceit": -5.438575745,
+                        "fui": -8.650525093,
+                        "reembols": -1.719314456,
+                        "despes": -0.229674339,
+                        "viag": 1.695710421,
+                        "ganh": -8.004362106,
+                        "premi": -2.648992777,
+                        "em": 1.510375619,
+                        "dinheir": 0.184531748,
+                        "concurs": -2.648992777,
+                        "arrecad": -2.878507376,
+                        "fund": 0.46217382,
+                        "atrav": -2.878507376,
+                        "uma": 0.334360301,
+                        "vaquinh": -2.878507376,
+                        "onlin": 0.372236669,
+                        "herd": -2.555531263,
+                        "quant": -0.151116908,
+                        "parent": -2.555531263,
+                        "distant": -2.555531263,
+                        "cobr": -2.555431843,
+                        "div": -2.555431843,
+                        "antig": -2.555431843,
+                        "vend": -4.944215775,
+                        "carr": -1.12707603,
+                        "usad": -1.871393442,
+                        "alugu": -0.848671734,
+                        "minh": 2.515115738,
+                        "propriedad": -0.848671734,
+                        "e": 1.530638576,
+                        "primeir": -0.848671734,
+                        "negoc": -0.738772154,
+                        "aument": -0.738772154,
+                        "fatur": -3.072829962,
+                        "com": 0.76769948,
+                        "a": 0.962508798,
+                        "aco": -1.145482779,
+                        "consegu": -3.354434967,
+                        "bols": -1.079019189,
+                        "estud": -3.354434967,
+                        "tiv": -4.479032516,
+                        "retorn": -4.479032516,
+                        "invest": 1.483240962,
+                        "doaca": -0.291675121,
+                        "gener": -0.291675121,
+                        "par": 2.260437965,
+                        "projet": -0.291675121,
+                        "recompens": -0.161001742,
+                        "temporari": -0.161001742,
+                        "bonificaca": -0.25871861,
+                        "desempenh": 1.476134062,
+                        "apost": -3.181666136,
+                        "remuner": -0.953732848,
+                        "consultor": 0.469445109,
+                        "mes": 0.62460357,
+                        "dos": -0.022682654,
+                        "meus": -0.022682654,
+                        "pais": -0.022682654,
+                        "gratificaca": -0.140935034,
+                        "bons": -0.140935034,
+                        "servic": -0.490588665,
+                        "segur": 0.546176493,
+                        "do": 0.459342271,
+                        "lot": 0.397880614,
+                        "pag": 4.16521883,
+                        "jardinag": -2.698406219,
+                        "valor": 1.447390795,
+                        "heranc": -0.650854468,
+                        "eu": 0.073338591,
+                        "despend": 1.120593309,
+                        "carta": 0.422091872,
+                        "credit": -0.407507747,
+                        "esgot": 0.142408252,
+                        "poupanc": 0.939908504,
+                        "viv": -0.23317869,
+                        "via": 2.480079412,
+                        "transferenc": -0.735918164,
+                        "banc": 1.545747757,
+                        "esbanj": 0.513974726,
+                        "no": 0.841557503,
+                        "shopping": 1.442852378,
+                        "debit": 1.322779536,
+                        "dilapid": 1.190240622,
+                        "parcel": 2.326981306,
+                        "desfiz": 0.050034903,
+                        "me": 0.050034903,
+                        "econom": 0.461308956,
+                        "chequ": 0.357525975,
+                        "despach": 2.186032772,
+                        "rapid": 1.126132488,
+                        "mei": 1.126132488,
+                        "aplic": 1.126132488,
+                        "dissip": 0.144059286,
+                        "fortun": 1.025060892,
+                        "eletron": 1.332479715,
+                        "fisic": 0.196915686,
+                        "viagens": -0.884699523,
+                        "pre": -2.006044149,
+                        "na": 2.790859461,
+                        "bal": 0.585122466,
+                        "espec": 0.585122466,
+                        "desembols": 1.754613638,
+                        "loj": 0.88563472,
+                        "utiliz": 1.130993962,
+                        "aproximaca": 0.88563472,
+                        "esvazi": 0.408807993,
+                        "carteir": 0.622461379,
+                        "not": 0.548037827,
+                        "gast": 1.629286885,
+                        "restaur": 1.135894418,
+                        "contactless": 0.382326394,
+                        "transfer": 0.759116769,
+                        "cont": 0.477908373,
+                        "del": -0.585502625,
+                        "internet": -0.585502625,
+                        "banking": -0.585502625,
+                        "gadgets": 1.120484352,
+                        "qr": 1.120484352,
+                        "cod": 1.120484352,
+                        "compr": 2.167252302,
+                        "virtual": -0.333872318,
+                        "roup": 1.114564657,
+                        "fest": 0.940494835,
+                        "merc": 0.686252117,
+                        "pagu": 1.21813798,
+                        "automat": -1.464416981,
+                        "present": 1.524621725,
+                        "aluguel": 1.495546222,
+                        "academ": 0.867749333,
+                        "mensal": 0.87315172,
+                        "cinem": -0.428119183,
+                        "passagens": 1.419462919,
+                        "aer": 1.419462919,
+                        "consult": 1.015844584,
+                        "medic": 0.734423757,
+                        "exterior": -1.474255085,
+                        "internacional": -0.623767316,
+                        "tud": -0.430967629,
+                        "feir": -0.430967629,
+                        "jant": 0.165352121,
+                        "livr": 0.924313486,
+                        "usand": 1.134084821,
+                        "mov": -0.121871665,
+                        "nov": 2.068018198,
+                        "smartphon": 0.066875629,
+                        "da": 0.678537309,
+                        "escol": 0.733750343,
+                        "bolet": -0.138006657,
+                        "bancari": -0.138006657,
+                        "ingress": 0.494581848,
+                        "show": 0.22777161,
+                        "supermerc": -0.548526824,
+                        "eletrodomest": 0.495166272,
+                        "gasolin": 1.65461576,
+                        "invern": 0.739565313,
+                        "farmac": -0.439089656,
+                        "material": 1.265245676,
+                        "aniversari": 1.319199204,
+                        "artig": 0.433538228,
+                        "esport": 0.350657344,
+                        "assinatur": 1.09189117,
+                        "streaming": 0.583375037,
+                        "decoraca": -0.683542967,
+                        "cas": -0.830995917,
+                        "acessori": 0.93258059,
+                        "mod": 0.93258059,
+                        "jog": 1.176641107,
+                        "remet": 1.125432372,
+                        "vinicius": -0.413326263,
+                        "dispens": 0.912782729,
+                        "apliqu": 0.898751795,
+                        "capital": 0.528259516,
+                        "estorriqu": 0.296643138,
+                        "despej": 1.18501699,
+                        "liquid": 0.214360505,
+                        "envi": 2.353757381,
+                        "derram": 0.117690139,
+                        "drenei": 0.177874237,
+                        "injet": 0.399059057,
+                        "torr": 0.191508844,
+                        "efetu": 0.698619783,
+                        "desocup": 0.213653475,
+                        "destin": 0.323729932,
+                        "desbarat": -0.081025712,
+                        "desperdic": -0.153766289,
+                        "aloqu": 1.141890764,
+                        "liquidifiqu": 1.141646743,
+                        "adquir": 2.386376619,
+                        "alinh": 1.489640713,
+                        "consum": 1.719228506,
+                        "aquir": 2.627176762,
+                        "compens": 1.544060826,
+                        "queim": 1.829433441,
+                        "quit": 1.527822018,
+                        "direcion": -0.741733432,
+                        "descarregu": 1.428153634,
+                        "empenh": 1.245872855,
+                        "desloqu": 1.536392093,
+                        "rea": 0.706606627,
+                        "sua": -0.27083683,
+                        "celul": -0.27083683,
+                        "car": 1.557301283,
+                        "tod": 0.794896901,
+                        "as": -1.419424653,
+                        "consideravel": 0.597864032,
+                        "signific": 0.942750394,
+                        "seman": 0.832416236,
+                        "dispendi": 1.078307867,
+                        "alta": 1.078307867,
+                        "obra": 0.742962658,
+                        "arte": -0.272620827,
+                        "vist": -0.614285529,
+                        "grand": 0.72824657,
+                        "adiant": -0.038033247,
+                        "curs": 1.283308864,
+                        "bilhet": 2.430658579,
+                        "mult": 0.237851486,
+                        "transit": 0.237851486,
+                        "construca": 0.393491387,
+                        "anual": -1.19855547,
+                        "revist": 1.50921607,
+                        "equip": 2.038222551,
+                        "informat": -0.386079788,
+                        "fer": -0.565358818,
+                        "criptomoed": 2.184316158,
+                        "reform": -0.147452489,
+                        "videogam": 0.916937709,
+                        "pel": 0.316492975,
+                        "matricul": -1.042109132,
+                        "faculdad": -1.042109132,
+                        "guard": -0.219097868,
+                        "consert": 1.358602762,
+                        "ajud": 0.786005616,
+                        "laptop": 0.868631363,
+                        "saud": 0.546176493,
+                        "contrat": 0.783371568,
+                        "natal": 1.443599701,
+                        "passei": 0.60813123,
+                        "turist": 0.60813123,
+                        "relogi": 1.43010366,
+                        "lux": 1.43010366,
+                        "idiom": -0.059535582,
+                        "spa": 1.803685784,
+                        "event": -0.082881577,
+                        "emergenc": 0.059820779,
+                        "tablet": 1.017700553,
+                        "casament": 0.119117655,
+                        "tabuleir": 0.691034555,
+                        "ginast": 0.990910888,
+                        "treinament": 0.683472097,
+                        "profissional": 0.683472097,
+                        "chiqu": 0.75356704,
+                        "biciclet": 0.871228814,
+                        "tatuag": 1.212116361,
+                        "brinqued": -0.107617572,
+                        "os": -0.107617572,
+                        "filh": -0.107617572,
+                        "cam": 0.475665748,
+                        "fotograf": 0.56629318,
+                        "tratament": 1.116870999,
+                        "belez": 0.296420425,
+                        "plant": 3.118078232,
+                        "jornal": 0.310180306,
+                        "caridad": 1.015583873,
+                        "maquin": 0.95767051,
+                        "caf": 2.051765919,
+                        "entreg": 2.139344454,
+                        "sof": 0.015798163,
+                        "cruzeir": 1.397433877,
+                        "cirurg": 0.709544301,
+                        "estet": 0.709544301,
+                        "club": 1.035189629,
+                        "leitur": 1.035189629,
+                        "televisor": 1.253933072,
+                        "music": 1.513549328,
+                        "manutenca": 2.235811949,
+                        "financeir": 1.423175335,
+                        "sapat": -0.992003143,
+                        "oficin": 0.740333378,
+                        "culin": 0.740333378,
+                        "aventur": 0.224353313,
+                        "teatr": -0.343538046,
+                        "pacot": 0.023905039,
+                        "tv": 0.761295974,
+                        "cab": 0.023905039,
+                        "lav": -1.094097018,
+                        "nutricion": 0.349936664,
+                        "cortin": -1.174882174,
+                        "sal": -1.174882174,
+                        "pintur": 2.048199892,
+                        "geladeir": 0.738414347,
+                        "encan": 1.943786621,
+                        "estant": -0.209770828,
+                        "eletric": 1.896568656,
+                        "odontolog": 0.820451379,
+                        "faxin": 0.592669129,
+                        "residencial": 0.592669129,
+                        "psicolog": -0.128336564,
+                        "nonefeature": -7.301548958
                       }
                     },
                     "None": {
-                      "bias": 2.549053884,
+                      "bias": 1.950954703,
                       "weights": {
-                        "receb": -0.439092249,
-                        "um": -0.868934214,
-                        "pagament": -0.446413845,
-                        "por": -0.512931705,
-                        "trabalh": -0.138296619,
-                        "freelanc": -0.138296619,
-                        "obtiv": -0.146967381,
-                        "bonus": -0.146967381,
-                        "de": -1.085012674,
-                        "final": -0.146967381,
-                        "ano": -0.146967381,
-                        "aceit": -0.193913028,
-                        "pix": -0.193913028,
-                        "amig": -0.193913028,
-                        "fui": -0.232394233,
-                        "reembols": -0.232394233,
-                        "despes": -0.232394233,
-                        "viag": -0.232394233,
-                        "ganh": -0.229905099,
-                        "premi": -0.229905099,
-                        "em": -0.624181688,
-                        "dinheir": -0.343276918,
-                        "concurs": -0.229905099,
-                        "arrecad": -0.11274977,
-                        "fund": -0.11274977,
-                        "atrav": -0.11274977,
-                        "uma": -0.890157461,
-                        "vaquinh": -0.11274977,
-                        "onlin": -0.11274977,
-                        "herd": -0.012321928,
-                        "quant": -0.012321928,
-                        "parent": -0.012321928,
-                        "distant": -0.012321928,
-                        "cobr": -0.534137249,
-                        "div": -0.534137249,
-                        "antig": -0.534137249,
-                        "vend": -0.641409516,
-                        "meu": -0.735937834,
-                        "carr": -0.553354204,
-                        "usad": -0.553354204,
-                        "alugu": -0.113927409,
-                        "minh": -0.389395803,
-                        "propriedad": -0.113927409,
-                        "e": -0.24790141,
-                        "o": -0.665662408,
-                        "primeir": -0.113927409,
-                        "negoc": -0.133973986,
-                        "salari": -0.166287288,
-                        "aument": -0.133973986,
-                        "fatur": -0.051457889,
-                        "com": -0.472219467,
-                        "a": -0.121351913,
-                        "aco": -0.159224764,
-                        "comissa": -0.036597546,
-                        "consegu": -0.178054333,
-                        "bols": -0.178054333,
-                        "estud": -0.178054333,
-                        "tiv": -0.147529572,
-                        "retorn": -0.147529572,
-                        "invest": -0.255296499,
-                        "doaca": -0.016296295,
-                        "gener": -0.016296295,
-                        "par": -0.503951252,
-                        "projet": -0.016296295,
-                        "envi": -0.41776076,
-                        "cont": -0.487654924,
-                        "vinicius": -0.41776076,
-                        "eu": -0.93829757,
-                        "despend": -0.061901294,
-                        "mes": -0.009623675,
-                        "carta": -0.268288702,
-                        "credit": -0.009623675,
-                        "esgot": -0.113371752,
-                        "poupanc": -0.059322305,
-                        "viv": -0.059322305,
-                        "via": -0.177660987,
-                        "transferenc": -0.260239601,
-                        "banc": -0.107766882,
-                        "esbanj": -0.088546731,
-                        "no": -0.206387401,
-                        "dilapid": -0.032313351,
-                        "parcel": -0.120860077,
-                        "econom": -0.05404941,
-                        "dissip": -0.15247269,
-                        "fortun": -0.15247269,
-                        "eletron": -0.15247269,
-                        "fisic": -0.05404941,
-                        "viagens": -0.052277625,
-                        "pre": -0.052277625,
-                        "pag": -0.052277625,
-                        "na": -0.105643027,
-                        "desembols": -0.105643027,
-                        "loj": -0.105643027,
-                        "utiliz": -0.194189802,
-                        "aproximaca": -0.105643027,
-                        "gast": -0.206387401,
-                        "restaur": -0.206387401,
-                        "contactless": -0.206387401,
-                        "transfer": -0.069894001,
-                        "del": -0.069894001,
-                        "internet": -0.069894001,
-                        "banking": -0.069894001,
-                        "roup": -0.088546731,
-                        "nonefeature": 9.243115425
+                        "receb": -0.601812005,
+                        "meu": -0.705601394,
+                        "salari": -0.331738561,
+                        "hoj": -0.311801404,
+                        "o": -0.508126199,
+                        "pix": -0.137213036,
+                        "de": -0.724315405,
+                        "um": -0.881984353,
+                        "amig": -0.137213036,
+                        "pagament": -0.438065976,
+                        "por": -0.475741625,
+                        "trabalh": -0.136421844,
+                        "freelanc": -0.055400085,
+                        "obtiv": -0.086163655,
+                        "bonus": -0.086163655,
+                        "final": -0.086163655,
+                        "ano": -0.086163655,
+                        "aceit": -0.070228405,
+                        "fui": -0.294761926,
+                        "reembols": -0.152044997,
+                        "despes": -0.152044997,
+                        "viag": -0.152044997,
+                        "ganh": -0.494429588,
+                        "premi": -0.051058199,
+                        "em": -1.089113832,
+                        "dinheir": -0.271826059,
+                        "concurs": -0.051058199,
+                        "arrecad": -0.048550922,
+                        "fund": -0.064701758,
+                        "atrav": -0.048550922,
+                        "uma": -1.067202926,
+                        "vaquinh": -0.048550922,
+                        "onlin": -0.215339616,
+                        "herd": -0.005490067,
+                        "quant": -0.005490067,
+                        "parent": -0.005490067,
+                        "distant": -0.005490067,
+                        "cobr": -0.294583499,
+                        "div": -0.294583499,
+                        "antig": -0.294583499,
+                        "vend": -0.395868927,
+                        "carr": -0.475619614,
+                        "usad": -0.373862892,
+                        "alugu": -0.025593899,
+                        "minh": -0.519487083,
+                        "propriedad": -0.025593899,
+                        "e": -0.09918981,
+                        "primeir": -0.025593899,
+                        "negoc": -0.002294581,
+                        "aument": -0.002294581,
+                        "fatur": -0.022006059,
+                        "com": -0.664967656,
+                        "a": -0.532911003,
+                        "aco": -0.063176528,
+                        "consegu": -0.060595565,
+                        "bols": -0.060595565,
+                        "estud": -0.060595565,
+                        "tiv": -0.030161049,
+                        "retorn": -0.030161049,
+                        "invest": -0.466584384,
+                        "par": -0.474260807,
+                        "recompens": -0.081022024,
+                        "temporari": -0.081022024,
+                        "bonificaca": -0.001832989,
+                        "desempenh": -0.001832989,
+                        "apost": -0.027162716,
+                        "remuner": -0.061695348,
+                        "consultor": -0.061695348,
+                        "mes": -0.140630051,
+                        "dos": -0.047102977,
+                        "meus": -0.047102977,
+                        "pais": -0.047102977,
+                        "gratificaca": -0.026889633,
+                        "bons": -0.026889633,
+                        "servic": -0.026889633,
+                        "subsidi": -0.090802655,
+                        "do": -0.285551757,
+                        "govern": -0.090802655,
+                        "lot": -0.389319122,
+                        "pag": -0.75066793,
+                        "jardinag": -0.071301341,
+                        "valor": -0.02301861,
+                        "eu": -0.223404095,
+                        "despend": -0.063391872,
+                        "carta": -0.257614046,
+                        "credit": -0.007493063,
+                        "esgot": -0.070948593,
+                        "poupanc": -0.156049058,
+                        "viv": -0.049604662,
+                        "via": -0.152433172,
+                        "transferenc": -0.504896641,
+                        "banc": -0.418309122,
+                        "esbanj": -0.051887963,
+                        "no": -0.339746326,
+                        "shopping": -0.103985779,
+                        "debit": -0.243404329,
+                        "dilapid": -0.017642565,
+                        "parcel": -0.069530532,
+                        "econom": -0.128998041,
+                        "chequ": -0.106677487,
+                        "despach": -0.01425909,
+                        "dissip": -0.059373565,
+                        "fortun": -0.176315561,
+                        "eletron": -0.072330125,
+                        "fisic": -0.022320803,
+                        "viagens": -0.014360406,
+                        "pre": -0.014360406,
+                        "na": -0.391729057,
+                        "desembols": -0.620046258,
+                        "loj": -0.096857138,
+                        "utiliz": -0.385190368,
+                        "aproximaca": -0.096857138,
+                        "gast": -0.263702005,
+                        "restaur": -0.235761151,
+                        "contactless": -0.235761151,
+                        "transfer": -0.080853015,
+                        "cont": -0.419483691,
+                        "del": -0.097004101,
+                        "internet": -0.097004101,
+                        "banking": -0.097004101,
+                        "compr": -0.777510047,
+                        "roup": -0.065182969,
+                        "pagu": -0.217102945,
+                        "automat": -0.243404329,
+                        "present": -0.274528056,
+                        "aluguel": -0.003705035,
+                        "academ": -0.354455471,
+                        "mensal": -0.135565713,
+                        "cinem": -0.095527686,
+                        "passagens": -0.241918117,
+                        "aer": -0.241918117,
+                        "consult": -0.120896384,
+                        "medic": -0.120896384,
+                        "exterior": -0.027401861,
+                        "internacional": -0.01425909,
+                        "tud": -0.000976872,
+                        "feir": -0.000976872,
+                        "livr": -0.37343365,
+                        "usand": -0.37343365,
+                        "mov": -0.029143883,
+                        "nov": -0.25086984,
+                        "da": -0.201449186,
+                        "escol": -0.167909414,
+                        "bolet": -0.094027609,
+                        "bancari": -0.094027609,
+                        "ingress": -0.095527686,
+                        "material": -0.073882304,
+                        "assinatur": -0.006958846,
+                        "streaming": -0.006958846,
+                        "cas": -0.016758079,
+                        "remet": -0.02301861,
+                        "vinicius": -0.179197967,
+                        "liquid": -0.106677487,
+                        "derram": -0.012956888,
+                        "efetu": -0.066512294,
+                        "destin": -0.016151065,
+                        "liquidifiqu": -0.139983088,
+                        "adquir": -0.280879319,
+                        "aquir": -0.148743406,
+                        "quit": -0.060095232,
+                        "rea": -0.169322133,
+                        "car": -0.099930093,
+                        "tod": -0.193456292,
+                        "as": -0.161163747,
+                        "signific": -0.013142817,
+                        "anual": -0.312917084,
+                        "fer": -0.07512942,
+                        "criptomoed": -0.395252913,
+                        "reform": -0.016758079,
+                        "videogam": -0.076264799,
+                        "pel": -0.337356478,
+                        "matricul": -0.235599548,
+                        "faculdad": -0.235599548,
+                        "guard": -0.013295015,
+                        "consert": -0.101757139,
+                        "laptop": -0.049969289,
+                        "natal": -0.17459847,
+                        "tablet": -0.041610289,
+                        "plant": -0.071301341,
+                        "televisor": -0.040587422,
+                        "nonefeature": 10.549005508
                       }
                     }
                   }
@@ -1301,6 +5518,14 @@
       }
     },
     "extraSentences": [
+      [
+        "pt",
+        "Recebi meu salário hoje."
+      ],
+      [
+        "pt",
+        "Recebi o PIX de um amigo."
+      ],
       [
         "pt",
         "Recebi um pagamento por um trabalho freelance."
@@ -1367,7 +5592,55 @@
       ],
       [
         "pt",
-        "Enviei 30.10 conto para o vinicius."
+        "Fui recompensado por um trabalho temporário."
+      ],
+      [
+        "pt",
+        "Recebi uma bonificação por desempenho."
+      ],
+      [
+        "pt",
+        "Ganhei dinheiro em uma aposta."
+      ],
+      [
+        "pt",
+        "Recebi um reembolso de um produto devolvido."
+      ],
+      [
+        "pt",
+        "Fui remunerado por uma consultoria."
+      ],
+      [
+        "pt",
+        "Recebi uma mesada dos meus pais."
+      ],
+      [
+        "pt",
+        "Ganhei uma gratificação por bons serviços."
+      ],
+      [
+        "pt",
+        "Recebi uma indenização de seguro."
+      ],
+      [
+        "pt",
+        "Recebi um subsídio do governo."
+      ],
+      [
+        "pt",
+        "Ganhei uma loteria."
+      ],
+      [
+        "pt",
+        "Fui pago por um serviço de jardinagem."
+      ],
+      [
+        "pt",
+        "Recebi um valor de herança."
+      ],
+      [
+        "pt",
+        "Enviei 30.10 conto para o Vinicius."
       ],
       [
         "pt",
@@ -1448,6 +5721,838 @@
       [
         "pt",
         "Eu desembolsei no mercado com pagamento em dinheiro."
+      ],
+      [
+        "pt",
+        "Eu gastei em eletrônicos com meu cartão de crédito."
+      ],
+      [
+        "pt",
+        "Eu paguei minhas contas utilizando débito automático."
+      ],
+      [
+        "pt",
+        "Eu comprei um presente com pagamento em cartão de crédito."
+      ],
+      [
+        "pt",
+        "Eu paguei o aluguel com transferência bancária."
+      ],
+      [
+        "pt",
+        "Eu despachei dinheiro para um amigo via PIX."
+      ],
+      [
+        "pt",
+        "Eu despendi na academia com pagamento mensal."
+      ],
+      [
+        "pt",
+        "Eu gastei no cinema com meu cartão pré-pago."
+      ],
+      [
+        "pt",
+        "Eu comprei passagens aéreas com pagamento online."
+      ],
+      [
+        "pt",
+        "Eu paguei uma consulta médica em dinheiro."
+      ],
+      [
+        "pt",
+        "Eu despachei dinheiro para o exterior via transferência internacional."
+      ],
+      [
+        "pt",
+        "Enviei 30.10 conto para o Vinicius."
+      ],
+      [
+        "pt",
+        "Despendi minha mesada com cartão de crédito."
+      ],
+      [
+        "pt",
+        "Esgotei minha poupança em dinheiro vivo."
+      ],
+      [
+        "pt",
+        "Investi em ações via transferência bancária."
+      ],
+      [
+        "pt",
+        "Esbanjei no shopping com meu cartão de débito."
+      ],
+      [
+        "pt",
+        "Dilapidei meu salário em parcelas."
+      ],
+      [
+        "pt",
+        "Desfiz-me de minhas economias em cheque."
+      ],
+      [
+        "pt",
+        "Despachei o dinheiro rapidamente por meio de um aplicativo de pagamento."
+      ],
+      [
+        "pt",
+        "Dissipei minha fortuna com transferência eletrônica."
+      ],
+      [
+        "pt",
+        "Esgotei minhas economias em dinheiro físico."
+      ],
+      [
+        "pt",
+        "Despendi em viagens com cartão pré-pago."
+      ],
+      [
+        "pt",
+        "Dissipei na balada com pagamento em espécie."
+      ],
+      [
+        "pt",
+        "Desembolsei na loja utilizando pagamento por aproximação."
+      ],
+      [
+        "pt",
+        "Esvaziei minha carteira com pagamento em notas."
+      ],
+      [
+        "pt",
+        "Gastei no restaurante com cartão contactless."
+      ],
+      [
+        "pt",
+        "Transferi para a conta dele via internet banking."
+      ],
+      [
+        "pt",
+        "Despendi em gadgets com pagamento por QR code."
+      ],
+      [
+        "pt",
+        "Dissipei em compras online com cartão virtual."
+      ],
+      [
+        "pt",
+        "Esbanjei em roupas utilizando pagamento parcelado."
+      ],
+      [
+        "pt",
+        "Dissipei na festa com pagamento em cheque."
+      ],
+      [
+        "pt",
+        "Desembolsei no mercado com pagamento em dinheiro."
+      ],
+      [
+        "pt",
+        "Gastei em eletrônicos com meu cartão de crédito."
+      ],
+      [
+        "pt",
+        "Paguei minhas contas utilizando débito automático."
+      ],
+      [
+        "pt",
+        "Comprei um presente com pagamento em cartão de crédito."
+      ],
+      [
+        "pt",
+        "Paguei o aluguel com transferência bancária."
+      ],
+      [
+        "pt",
+        "Despachei dinheiro para um amigo via PIX."
+      ],
+      [
+        "pt",
+        "Despendi na academia com pagamento mensal."
+      ],
+      [
+        "pt",
+        "Gastei no cinema com meu cartão pré-pago."
+      ],
+      [
+        "pt",
+        "Comprei passagens aéreas com pagamento online."
+      ],
+      [
+        "pt",
+        "Paguei uma consulta médica em dinheiro."
+      ],
+      [
+        "pt",
+        "Despachei dinheiro para o exterior via transferência internacional."
+      ],
+      [
+        "pt",
+        "Gastei tudo na feira com pagamento em notas."
+      ],
+      [
+        "pt",
+        "Paguei o jantar com cartão de débito."
+      ],
+      [
+        "pt",
+        "Comprei livros usando transferência bancária."
+      ],
+      [
+        "pt",
+        "Gastei em móveis com pagamento parcelado."
+      ],
+      [
+        "pt",
+        "Investi em um novo smartphone com pagamento em cartão de crédito."
+      ],
+      [
+        "pt",
+        "Paguei a mensalidade da escola com boleto bancário."
+      ],
+      [
+        "pt",
+        "Comprei ingressos para um show com pagamento online."
+      ],
+      [
+        "pt",
+        "Gastei no supermercado com pagamento em cartão de débito."
+      ],
+      [
+        "pt",
+        "Despendi em eletrodomésticos com pagamento parcelado."
+      ],
+      [
+        "pt",
+        "Paguei a gasolina com pagamento em dinheiro."
+      ],
+      [
+        "pt",
+        "Gastei em roupas de inverno com pagamento em cartão de crédito."
+      ],
+      [
+        "pt",
+        "Desembolsei na farmácia com pagamento em dinheiro."
+      ],
+      [
+        "pt",
+        "Gastei em material escolar com pagamento por transferência bancária."
+      ],
+      [
+        "pt",
+        "Comprei um presente de aniversário com pagamento online."
+      ],
+      [
+        "pt",
+        "Despendi em artigos esportivos com pagamento em cartão de débito."
+      ],
+      [
+        "pt",
+        "Paguei a assinatura do streaming com débito automático."
+      ],
+      [
+        "pt",
+        "Comprei decoração para a casa com pagamento em cartão de crédito."
+      ],
+      [
+        "pt",
+        "Gastei em acessórios de moda com pagamento em dinheiro."
+      ],
+      [
+        "pt",
+        "Despendi em jogos eletrônicos com pagamento online."
+      ],
+      [
+        "pt",
+        "Remeti um valor para o Vinicius."
+      ],
+      [
+        "pt",
+        "Dispensei minha mesada com cartão de crédito."
+      ],
+      [
+        "pt",
+        "Desembolsei tudo na feira em dinheiro vivo."
+      ],
+      [
+        "pt",
+        "Apliquei capital em ações via transferência bancária."
+      ],
+      [
+        "pt",
+        "Estorriquei no shopping com meu cartão de débito."
+      ],
+      [
+        "pt",
+        "Despejei meu salário em parcelas."
+      ],
+      [
+        "pt",
+        "Liquidei minhas economias em cheque."
+      ],
+      [
+        "pt",
+        "Enviei o dinheiro rapidamente por meio de um aplicativo de pagamento."
+      ],
+      [
+        "pt",
+        "Derramei minha fortuna com transferência eletrônica."
+      ],
+      [
+        "pt",
+        "Dreneio minhas economias em dinheiro físico."
+      ],
+      [
+        "pt",
+        "Injetei fundos em viagens com cartão pré-pago."
+      ],
+      [
+        "pt",
+        "Torrei na balada com pagamento em espécie."
+      ],
+      [
+        "pt",
+        "Efetuei pagamento na loja utilizando pagamento por aproximação."
+      ],
+      [
+        "pt",
+        "Desocupei minha carteira com pagamento em notas."
+      ],
+      [
+        "pt",
+        "Paguei no restaurante com cartão contactless."
+      ],
+      [
+        "pt",
+        "Destinei fundos para a conta dele via internet banking."
+      ],
+      [
+        "pt",
+        "Injetei capital em gadgets com pagamento por QR code."
+      ],
+      [
+        "pt",
+        "Desbaratei em compras online com cartão virtual."
+      ],
+      [
+        "pt",
+        "Torrei em roupas utilizando pagamento parcelado."
+      ],
+      [
+        "pt",
+        "Desperdicei na festa com pagamento em cheque."
+      ],
+      [
+        "pt",
+        "Efetuei compra no mercado com pagamento em dinheiro."
+      ],
+      [
+        "pt",
+        "Aloquei fundos em eletrônicos com meu cartão de crédito."
+      ],
+      [
+        "pt",
+        "Liquidifiquei minhas contas utilizando débito automático."
+      ],
+      [
+        "pt",
+        "Adquiri um presente com pagamento em cartão de crédito."
+      ],
+      [
+        "pt",
+        "Remeti o aluguel com transferência bancária."
+      ],
+      [
+        "pt",
+        "Enviei dinheiro para um amigo via PIX."
+      ],
+      [
+        "pt",
+        "Alinhei despesas na academia com pagamento mensal."
+      ],
+      [
+        "pt",
+        "Consumi no cinema com meu cartão pré-pago."
+      ],
+      [
+        "pt",
+        "Aquiri passagens aéreas com pagamento online."
+      ],
+      [
+        "pt",
+        "Compensei uma consulta médica em dinheiro."
+      ],
+      [
+        "pt",
+        "Enviei dinheiro para o exterior via transferência internacional."
+      ],
+      [
+        "pt",
+        "Queimei tudo na feira com pagamento em notas."
+      ],
+      [
+        "pt",
+        "Quitei o jantar com cartão de débito."
+      ],
+      [
+        "pt",
+        "Adquiri livros usando transferência bancária."
+      ],
+      [
+        "pt",
+        "Desempenhei capital em móveis com pagamento parcelado."
+      ],
+      [
+        "pt",
+        "Direcionei fundos para um novo smartphone com pagamento em cartão de crédito."
+      ],
+      [
+        "pt",
+        "Quitei a mensalidade da escola com boleto bancário."
+      ],
+      [
+        "pt",
+        "Adquiri ingressos para um show com pagamento online."
+      ],
+      [
+        "pt",
+        "Desempenhei fundos no supermercado com pagamento em cartão de débito."
+      ],
+      [
+        "pt",
+        "Descarreguei em eletrodomésticos com pagamento parcelado."
+      ],
+      [
+        "pt",
+        "Direcionei pagamento para a gasolina com pagamento em dinheiro."
+      ],
+      [
+        "pt",
+        "Adquiri roupas de inverno com pagamento em cartão de crédito."
+      ],
+      [
+        "pt",
+        "Quitei na farmácia com pagamento em dinheiro."
+      ],
+      [
+        "pt",
+        "Empenhei capital em material escolar com pagamento por transferência bancária."
+      ],
+      [
+        "pt",
+        "Adquiri um presente de aniversário com pagamento online."
+      ],
+      [
+        "pt",
+        "Remeti fundos em artigos esportivos com pagamento em cartão de débito."
+      ],
+      [
+        "pt",
+        "Quitei a assinatura do streaming com débito automático."
+      ],
+      [
+        "pt",
+        "Adquiri decoração para a casa com pagamento em cartão de crédito."
+      ],
+      [
+        "pt",
+        "Desloquei fundos em acessórios de moda com pagamento em dinheiro."
+      ],
+      [
+        "pt",
+        "Desempenhei em jogos eletrônicos com pagamento online."
+      ],
+      [
+        "pt",
+        "Desembolsou 30 reais para o Vinicius."
+      ],
+      [
+        "pt",
+        "Investiu sua mesada em um novo celular."
+      ],
+      [
+        "pt",
+        "Comprou um presente caro."
+      ],
+      [
+        "pt",
+        "Pagou todas as contas do mês."
+      ],
+      [
+        "pt",
+        "Transferiu dinheiro para a conta do amigo."
+      ],
+      [
+        "pt",
+        "Desembolsou uma quantia considerável em roupas."
+      ],
+      [
+        "pt",
+        "Investiu em ações na bolsa de valores."
+      ],
+      [
+        "pt",
+        "Gastou uma fortuna no shopping."
+      ],
+      [
+        "pt",
+        "Desembolsou todo o dinheiro da poupança."
+      ],
+      [
+        "pt",
+        "Pagou em dinheiro por um serviço."
+      ],
+      [
+        "pt",
+        "Remeteu um valor significativo para o exterior."
+      ],
+      [
+        "pt",
+        "Queimou todo o salário em um final de semana."
+      ],
+      [
+        "pt",
+        "Dispendiou uma quantia alta em eletrônicos."
+      ],
+      [
+        "pt",
+        "Desembolsou dinheiro para uma obra de arte."
+      ],
+      [
+        "pt",
+        "Pagou à vista por um carro novo."
+      ],
+      [
+        "pt",
+        "Desembolsou uma quantia grande em uma festa."
+      ],
+      [
+        "pt",
+        "Pagou adiantado por um curso."
+      ],
+      [
+        "pt",
+        "Comprou um bilhete de loteria."
+      ],
+      [
+        "pt",
+        "Pagou uma multa de trânsito."
+      ],
+      [
+        "pt",
+        "Desembolsou em material de construção."
+      ],
+      [
+        "pt",
+        "Pagou por uma assinatura anual de revista."
+      ],
+      [
+        "pt",
+        "Comprou um presente de aniversário."
+      ],
+      [
+        "pt",
+        "Desembolsou em equipamentos de informática."
+      ],
+      [
+        "pt",
+        "Comprou passagens aéreas para as férias."
+      ],
+      [
+        "pt",
+        "Investiu em criptomoedas."
+      ],
+      [
+        "pt",
+        "Pagou por uma viagem internacional."
+      ],
+      [
+        "pt",
+        "Desembolsou em reformas na casa."
+      ],
+      [
+        "pt",
+        "Comprou um novo videogame."
+      ],
+      [
+        "pt",
+        "Pagou pela matrícula na faculdade."
+      ],
+      [
+        "pt",
+        "Desembolsou em consultas médicas."
+      ],
+      [
+        "pt",
+        "Comprou um novo guarda-roupa."
+      ],
+      [
+        "pt",
+        "Pagou pelo conserto do carro."
+      ],
+      [
+        "pt",
+        "Desembolsou em um jantar caro."
+      ],
+      [
+        "pt",
+        "Comprou ingressos para um show."
+      ],
+      [
+        "pt",
+        "Pagou a academia anual."
+      ],
+      [
+        "pt",
+        "Desembolsou para ajudar um amigo."
+      ],
+      [
+        "pt",
+        "Comprou um novo laptop."
+      ],
+      [
+        "pt",
+        "Pagou por um seguro de saúde."
+      ],
+      [
+        "pt",
+        "Desembolsou para contratar um serviço de streaming."
+      ],
+      [
+        "pt",
+        "Comprou presentes de Natal."
+      ],
+      [
+        "pt",
+        "Pagou por um passeio turístico."
+      ],
+      [
+        "pt",
+        "Desembolsou em móveis novos."
+      ],
+      [
+        "pt",
+        "Comprou um relógio de luxo."
+      ],
+      [
+        "pt",
+        "Pagou por um curso de idiomas."
+      ],
+      [
+        "pt",
+        "Desembolsou em um spa."
+      ],
+      [
+        "pt",
+        "Comprou um ingresso para um evento esportivo."
+      ],
+      [
+        "pt",
+        "Pagou por uma consulta de emergência."
+      ],
+      [
+        "pt",
+        "Desembolsou em acessórios de moda."
+      ],
+      [
+        "pt",
+        "Comprou um novo tablet."
+      ],
+      [
+        "pt",
+        "Pagou por uma festa de casamento."
+      ],
+      [
+        "pt",
+        "Desembolsou em jogos de tabuleiro."
+      ],
+      [
+        "pt",
+        "Comprou um equipamento de ginástica."
+      ],
+      [
+        "pt",
+        "Pagou por um treinamento profissional."
+      ],
+      [
+        "pt",
+        "Desembolsou em um restaurante chique."
+      ],
+      [
+        "pt",
+        "Comprou uma bicicleta nova."
+      ],
+      [
+        "pt",
+        "Pagou por uma tatuagem."
+      ],
+      [
+        "pt",
+        "Desembolsou em brinquedos para os filhos."
+      ],
+      [
+        "pt",
+        "Comprou uma nova câmera fotográfica."
+      ],
+      [
+        "pt",
+        "Pagou por um tratamento de beleza."
+      ],
+      [
+        "pt",
+        "Desembolsou em plantas e jardinagem."
+      ],
+      [
+        "pt",
+        "Comprou ingressos para o cinema."
+      ],
+      [
+        "pt",
+        "Pagou por uma assinatura de jornal."
+      ],
+      [
+        "pt",
+        "Desembolsou em uma obra de caridade."
+      ],
+      [
+        "pt",
+        "Comprou uma máquina de café."
+      ],
+      [
+        "pt",
+        "Pagou por um serviço de entrega."
+      ],
+      [
+        "pt",
+        "Desembolsou em um novo sofá."
+      ],
+      [
+        "pt",
+        "Comprou uma viagem de cruzeiro."
+      ],
+      [
+        "pt",
+        "Pagou por uma cirurgia estética."
+      ],
+      [
+        "pt",
+        "Desembolsou em um clube de leitura."
+      ],
+      [
+        "pt",
+        "Comprou um novo televisor."
+      ],
+      [
+        "pt",
+        "Pagou por um curso online."
+      ],
+      [
+        "pt",
+        "Desembolsou em uma academia de ginástica."
+      ],
+      [
+        "pt",
+        "Comprou uma assinatura de streaming de música."
+      ],
+      [
+        "pt",
+        "Pagou por um serviço de manutenção."
+      ],
+      [
+        "pt",
+        "Desembolsou em uma consultoria financeira."
+      ],
+      [
+        "pt",
+        "Comprou um novo par de sapatos."
+      ],
+      [
+        "pt",
+        "Pagou por uma oficina de culinária."
+      ],
+      [
+        "pt",
+        "Desembolsou em uma viagem de aventura."
+      ],
+      [
+        "pt",
+        "Comprou um ingresso para o teatro."
+      ],
+      [
+        "pt",
+        "Pagou por um pacote de TV a cabo."
+      ],
+      [
+        "pt",
+        "Desembolsou em uma nova máquina de lavar."
+      ],
+      [
+        "pt",
+        "Comprou uma assinatura de revista."
+      ],
+      [
+        "pt",
+        "Pagou por uma consulta de nutricionista."
+      ],
+      [
+        "pt",
+        "Desembolsou em material escolar."
+      ],
+      [
+        "pt",
+        "Comprou uma nova cortina para a sala."
+      ],
+      [
+        "pt",
+        "Pagou por um serviço de pintura."
+      ],
+      [
+        "pt",
+        "Desembolsou em um curso de fotografia."
+      ],
+      [
+        "pt",
+        "Comprou uma nova geladeira."
+      ],
+      [
+        "pt",
+        "Pagou por um serviço de encanador."
+      ],
+      [
+        "pt",
+        "Desembolsou em uma assinatura de academia."
+      ],
+      [
+        "pt",
+        "Comprou uma nova estante de livros."
+      ],
+      [
+        "pt",
+        "Pagou por um serviço de eletricista."
+      ],
+      [
+        "pt",
+        "Desembolsou em um tratamento odontológico."
+      ],
+      [
+        "pt",
+        "Comprou uma assinatura de jogos online."
+      ],
+      [
+        "pt",
+        "Pagou por uma faxina residencial."
+      ],
+      [
+        "pt",
+        "Desembolsou em uma assinatura de TV por assinatura."
+      ],
+      [
+        "pt",
+        "Comprou uma nova cama."
+      ],
+      [
+        "pt",
+        "Pagou por uma consulta de psicólogo."
       ]
     ]
   },
@@ -1477,7 +6582,7 @@
     "pt": {
       "recebi": [
         {
-          "response": "Regitramos seu recebimento"
+          "response": "Registramos seu recebimento"
         },
         {
           "response": "Anotado sua entrada"
