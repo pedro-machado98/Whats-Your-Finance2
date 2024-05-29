@@ -4,9 +4,10 @@ import { JwtModule } from '@nestjs/jwt';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
 import { JwtStrategy } from './strategy';
+import { WhatsappModule } from 'src/whatsapp/whatsapp.module';
 
 @Module({
-  imports: [JwtModule.register({})],
+  imports: [JwtModule.register({}), WhatsappModule],
   controllers: [AuthController],
   providers: [AuthService, JwtStrategy],
 })

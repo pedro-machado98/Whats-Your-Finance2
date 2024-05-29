@@ -42,15 +42,10 @@ export class WhatsappService {
     if (message?.type === "text") {
       console.log("Recebendo webhook message:", JSON.stringify(req.body, null));
   
-      const business_phone_number_id = req.body.entry?.[0]?.changes?.[0]?.value?.metadata?.phone_number_id;
+      // const business_phone_number_id = req.body.entry?.[0]?.changes?.[0]?.value?.metadata?.phone_number_id;
+      const business_phone_number_id = this.config.get('business_phone_number_id');
 
-      let clientPhoneNumber = message.from
-      clientPhoneNumber = clientPhoneNumber.slice(2)
-
-      /**
-       * Apagar abaixo
-       */
-      console.log(clientPhoneNumber)
+      let clientPhoneNumber = message.from.slice(2)
 
       const user = await this.prisma.user.findUnique({
         where: {
@@ -139,19 +134,19 @@ export class WhatsappService {
     res.sendStatus(200);
   }
 
-
-
-    
-
   async detectaInformacoesNLP(message: string) {
     
     const actions = await this.nlpService.actions.process('pt', message);
     const categories = await this.nlpService.categories.findEntities(message,'pt')
-    console.log('\n\n'+JSON.stringify(actions.entities)+'\n\n')
+    console.log('\n\n'+JSON.stringify(actions)+'\n\n')
     let actionSelected = actions.intent;
     let categorySelected = categories[0]?.entity;
     if(categorySelected == 'number'){
       categorySelected = categories[1]?.entity;
+    }
+
+    if(categorySelected == undefined){
+      categorySelected = 'Geral'
     }
     // console.log(actions)
     /**
@@ -190,23 +185,24 @@ export class WhatsappService {
     // }
 
 // Primeiro, filtre as entidades do tipo 'currency' para garantir que estamos pegando um valor monetário
-const currencyValues = actions.entities
+let currencyValues = actions.entities
     .filter(elem => (elem.entity === 'currency' && elem.resolution && elem.resolution.value) 
                     || (!Number.isNaN(parseInt(elem.sourceText)) && elem.resolution && elem.resolution.value) 
                           || (!Number.isNaN(parseFloat(elem.sourceText)) && elem.resolution && elem.resolution.value))
-    .map(e => e.resolution.value);
+    .map(e => e.resolution.strValue);
 
-    console.log("\n\n\n")
-        console.log(currencyValues)
+    console.log("\n") 
+    let finalValue = parseFloat(currencyValues[0].replace(",", "."));
+    console.log(finalValue)
 
-// Se existir um valor de moeda, use-o; caso contrário, tente pegar um número do tipo 'float' ou 'integer'
-const finalValue = currencyValues.length > 0 
-    ? currencyValues[0] 
-    : actions.entities
-        .filter(elem => elem.resolution && (elem.resolution.subtype === "float" || elem.resolution.subtype === "integer"))
-        .map(e => e.resolution.value)[0];
+// // Se existir um valor de moeda, use-o; caso contrário, tente pegar um número do tipo 'float' ou 'integer'
+// const finalValue = currencyValues.length > 0 
+//     ? currencyValues[0] 
+//     : actions.entities
+//         .filter(elem => elem.resolution && (elem.resolution.subtype === "float" || elem.resolution.subtype === "integer"))
+//         .map(e => e.resolution.value)[0];
 
-// console.log(finalValue);
+// console.log("\n\n"+finalValue);
   
 
         // console.log(actions+'\n\n\n')
@@ -214,17 +210,22 @@ const finalValue = currencyValues.length > 0
         // console.log(floatNum+'\n\n')
         // console.log(integerNum+'\n\n')
         // console.log(finalValue+'\n\n')
+    
     let dadosMapeados = {
       "Acao": actionSelected,
       "Valor": finalValue,
       "Categoria": categorySelected != 'number' ? categorySelected : "Geral"
   };
 
-    // console.log(dadosMapeados)
+    console.log(dadosMapeados)
 
     return dadosMapeados
 
   };
+
+  async confirmaNumeroCliente() {
+
+  }
 
 
 }

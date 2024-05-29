@@ -22,7 +22,7 @@
                 "Sofá",
                 "Geladeira",
                 "Sistemas de Segurança"],
-            "responses": ["Categoria reconhecida", "Categoria registrada"]
+            "responses": ["Categoria moradia reconhecida"]
         },
         "alimentacao": {
             "examples": [
@@ -38,7 +38,6 @@
                 "Delivery",
                 "Fast-food",
                 "Confeitaria",
-                "Bar",
                 "Café",
                 "Sorveteria",
                 "Food truck",
@@ -48,7 +47,7 @@
                 "Buffet",
                 "Pão",
                 "Lanche"],
-            "responses": ["Categoria reconhecida", "Categoria registrada"]
+            "responses": ["Categoria alimentacao reconhecida"]
         },
         "transporte": {
             "examples": [
@@ -72,7 +71,7 @@
                 "Metrô",
                 "Uber",
                 "Transporte"],
-            "responses": ["Categoria reconhecida", "Categoria registrada"]
+            "responses": ["Categoria transporte reconhecida"]
         },
         "saude": {
             "examples": [
@@ -97,7 +96,7 @@
                 "Nutricionista",
                 "Check-up",
                 "Reabilitação"],
-            "responses": ["Categoria reconhecida", "Categoria registrada"]
+            "responses": ["Categoria saude reconhecida"]
         },
         "educacao": {
             "examples": [
@@ -121,7 +120,7 @@
                 "Didático",
                 "Creche",
                 "Infantil"],
-            "responses": ["Categoria reconhecida", "Categoria registrada"]
+            "responses": ["Categoria educacao reconhecida"]
         },
         "lazer": {
             "examples": [
@@ -145,7 +144,7 @@
                 "Jogo",
                 "Dança",
                 "Arte"],
-            "responses": ["Categoria reconhecida", "Categoria registrada"]
+            "responses": ["Categoria lazer reconhecida"]
         },
         "despesas_pessoais": {
             "examples": [
@@ -169,7 +168,7 @@
                 "Entretenimento",
                 "Viagem",
                 "Presente"],
-            "responses": ["Categoria reconhecida", "Categoria registrada"]
+            "responses": ["Categoria despesas pessoais reconhecida"]
         },
         "economias": {
             "examples": [
@@ -193,7 +192,7 @@
                 "Resgate",
                 "Contribuição",
                 "Futuro"],
-            "responses": ["Categoria reconhecida", "Categoria registrada"]
+            "responses": ["Categoria economias reconhecida"]
         }
     }
 }

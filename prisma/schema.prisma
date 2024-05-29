@@ -56,4 +56,3 @@ enum Categoria {
   DESPESAS_PESSOAIS
   ECONOMIAS
 }
-

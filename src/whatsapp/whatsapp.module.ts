@@ -12,6 +12,7 @@ import { WhatsappService } from './whatsapp.service';
   imports: [HttpModule, NlpModule],
   controllers: [WhatsappController],
   providers: [WhatsappService],
+  exports: [WhatsappService]
   }
       
       

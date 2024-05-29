@@ -6,6 +6,7 @@ import * as argon from 'argon2';
 import { PrismaService } from 'src/prisma/prisma.service';
 
 import { AuthDto, AuthLogarDto } from './dto';
+import { WhatsappService } from 'src/whatsapp/whatsapp.service';
 
 @Injectable()
 export class AuthService {
@@ -13,11 +14,14 @@ export class AuthService {
     private prisma: PrismaService,
     private jwt: JwtService,
     private config: ConfigService,
+    private whatsapp: WhatsappService,
   ) {}
 
   async signup(dto: AuthDto) {
     //gerar o hash da senha
     const hash = await argon.hash(dto.password);
+
+
 
     try {
       //salvar o usuario no banco
