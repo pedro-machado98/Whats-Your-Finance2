@@ -15,7 +15,10 @@ export class WhatsappService {
       private config: ConfigService,
       private readonly nlpService: NlpService,
       private prisma: PrismaService,
-    ) {}
+    ) {
+      const business_phone_number_id = this.config.get('business_phone_number_id');
+
+    }
 
     validaPrimeiraConexao(req: Request, res: Response) {
       
@@ -34,18 +37,23 @@ export class WhatsappService {
     }
 
   async processaMensagem(req: Request, res: Response) {
-    
-    // console.log(" Recebendo webhook status:", JSON.stringify(req.body, null));      
-    
-    const message = req.body.entry?.[0]?.changes[0]?.value?.messages?.[0];
-    
-    if (message?.type === "text") {
-      console.log("Recebendo webhook message:", JSON.stringify(req.body, null));
-  
-      // const business_phone_number_id = req.body.entry?.[0]?.changes?.[0]?.value?.metadata?.phone_number_id;
-      const business_phone_number_id = this.config.get('business_phone_number_id');
 
-      let clientPhoneNumber = message.from.slice(2)
+    const body = req.body;
+
+    const url =  `http://localhost:3001/client/sendMessage/whatsappfinances`
+
+    // console.log(body.data.message.id)
+    // console.log(body.data.message._data)
+
+    if(body.dataType ==  'message' && body.data.message.id.remote.length < 20) {
+      console.log(body)
+      const message = body.data.message.body;
+      const author = body.data.message.from;
+      let clientPhoneNumber = author.split('@')[0]
+      clientPhoneNumber = clientPhoneNumber.substring(2)
+
+      console.log("author: " + author)
+      console.log("clientPhoneNumber: " + clientPhoneNumber)
 
       const user = await this.prisma.user.findUnique({
         where: {
@@ -54,40 +62,23 @@ export class WhatsappService {
       });
 
       if (!user) {
-        const url =  `https://graph.facebook.com/v18.0/${business_phone_number_id}/messages`
         const data = {
-              messaging_product: "whatsapp",
-              to: message.from,
-              text: { body: "Seu usuario não está cadastrado no APP Whats Your Finances"},
-              context: {
-                message_id: message.id, 
-              }, 
-          }
-        const config = {
-            headers:{
-              Authorization:`Bearer ${this.config.get('TEST_BEARER_WHATSAPP')}`
-            }
+            chatId: author,
+            contentType: "string",
+            content: "Você não está cadastrado na nossa aplicação Whats Your Finance. Por favor, cadastre-se."
           }
 
         try {
-          const response = await lastValueFrom(this.httpService.post(url,data,config))
-            
-          const dataStatus = {
-            messaging_product: "whatsapp",
-            status: "read",
-            message_id: message.id,
-          }
-
-          const responseStatus = await lastValueFrom(this.httpService.post(url,dataStatus,config))
-
+          const response = await lastValueFrom(this.httpService.post(url,data))
 
         } catch (e) {
           throw(e)
-        }
+          }
       } else {
-          var dadosReconhecidos =  await this.detectaInformacoesNLP(message.text.body)
-          var dadosReconhecidosString = JSON.stringify( dadosReconhecidos)
-    
+
+        try {
+          var dadosReconhecidos =  await this.detectaInformacoesNLP(message)
+          var dadosReconhecidosString = JSON.stringify(dadosReconhecidos)
           const movimentacao = await this.prisma.movimentacao.create({
             data: {
               entrada_saida: dadosReconhecidos.Acao,
@@ -97,35 +88,31 @@ export class WhatsappService {
               userId: user.id
             },
           })
+          
+          if(!movimentacao) {
+            const data = {
+              chatId: author,
+              contentType: "string",
+              content: "Desculpe, não conseguimos cadastrar sua movimentação. Podemos não ter entendido a sua movimentação, pode reescrever de uma forma diferente?"
+            }
+  
+            const response = await lastValueFrom(this.httpService.post(url,data))
+          }
 
-          const url =  `https://graph.facebook.com/v18.0/${business_phone_number_id}/messages`
+
+        } catch (e) {
+          console.log(e)
+        }
+
           const data = {
-                  messaging_product: "whatsapp",
-                  to: message.from,
-                  text: { body: "Reconhecemos as informações:\n" + dadosReconhecidosString},
-                  context: {
-                    message_id: message.id, 
-                  }, 
-            }
-          const config = {
-                headers:{
-                  Authorization:`Bearer ${this.config.get('TEST_BEARER_WHATSAPP')}`
-                }
-            }
+            chatId: author,
+            contentType: "string",
+            content: dadosReconhecidosString
+          }
     
           try {
-            const response = await lastValueFrom(this.httpService.post(url,data,config))
+            const response = await lastValueFrom(this.httpService.post(url,data))
               
-            const dataStatus = {
-                messaging_product: "whatsapp",
-                status: "read",
-                message_id: message.id,
-            }
-    
-    
-            const responseStatus = await lastValueFrom(this.httpService.post(url,dataStatus,config))
-    
-    
           } catch (e) {
             throw(e)
           }
@@ -185,15 +172,15 @@ export class WhatsappService {
     // }
 
 // Primeiro, filtre as entidades do tipo 'currency' para garantir que estamos pegando um valor monetário
-let currencyValues = actions.entities
+  let currencyValues = actions.entities
     .filter(elem => (elem.entity === 'currency' && elem.resolution && elem.resolution.value) 
                     || (!Number.isNaN(parseInt(elem.sourceText)) && elem.resolution && elem.resolution.value) 
                           || (!Number.isNaN(parseFloat(elem.sourceText)) && elem.resolution && elem.resolution.value))
     .map(e => e.resolution.strValue);
 
-    console.log("\n") 
-    let finalValue = parseFloat(currencyValues[0].replace(",", "."));
-    console.log(finalValue)
+  console.log("\n") 
+  let finalValue = parseFloat(currencyValues[0].replace(",", "."));
+  console.log(finalValue)
 
 // // Se existir um valor de moeda, use-o; caso contrário, tente pegar um número do tipo 'float' ou 'integer'
 // const finalValue = currencyValues.length > 0 
@@ -223,8 +210,25 @@ let currencyValues = actions.entities
 
   };
 
-  async confirmaNumeroCliente() {
+  async confirmaNumeroCliente(numeroTelefone: string) {
+    const url =  `https://graph.facebook.com/v18.0/${this.config.get('business_phone_number_id')}/messages`
+    const data = {
+            messaging_product: "whatsapp",
+            to: "55"+numeroTelefone,
+            text: { body: "Seu login foi validado, para cadastrar seus gastos é só me mandar mensagem!"},
+      }
+    const config = {
+          headers:{
+            Authorization:`Bearer ${this.config.get('TEST_BEARER_WHATSAPP')}`
+          }
+      }
 
+    try {
+      const response = await lastValueFrom(this.httpService.post(url,data,config))
+    } catch (e) {
+      throw(e)
+    }
+    return false;
   }
 
 

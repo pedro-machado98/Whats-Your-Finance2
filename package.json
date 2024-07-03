@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "ngrok:start": "ngrok http --domain=actively-settling-rodent.ngrok-free.app 3000",
+    "ngrok:start": "ngrok http --domain=magnetic-martin-correctly.ngrok-free.app 3000",
     "prisma:dev:deploy": "prisma migrate deploy",
     "db:dev:rm": "docker compose rm dev-db -s -f -v",
     "db:dev:up": "docker compose up dev-db -d",

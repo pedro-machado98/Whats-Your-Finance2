@@ -4,9 +4,9 @@ import { JwtService } from '@nestjs/jwt';
 import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library';
 import * as argon from 'argon2';
 import { PrismaService } from 'src/prisma/prisma.service';
+import { WhatsappService } from 'src/whatsapp/whatsapp.service';
 
 import { AuthDto, AuthLogarDto } from './dto';
-import { WhatsappService } from 'src/whatsapp/whatsapp.service';
 
 @Injectable()
 export class AuthService {
@@ -21,7 +21,7 @@ export class AuthService {
     //gerar o hash da senha
     const hash = await argon.hash(dto.password);
 
-
+    // this.whatsapp.confirmaNumeroCliente(dto.DDDtelefone);
 
     try {
       //salvar o usuario no banco
