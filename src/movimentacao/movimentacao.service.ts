@@ -48,7 +48,8 @@ export class MovimentacaoService {
         try {
             createdMovimentacao = await this.prismaService.movimentacao.create({
                 data: {
-                    entrada_saida: movimentacaoDto.entrada_saida,
+                    entrada: movimentacaoDto.entrada,
+                    saida: movimentacaoDto.saida,
                     conta: movimentacaoDto.conta ? movimentacaoDto.conta : '',
                     valor: movimentacaoDto.valor,
                     categoria: movimentacaoDto.categoria,
@@ -78,8 +79,12 @@ export class MovimentacaoService {
         let updatedMovimentacao;
 
         //refatorar para usar Object Keys;
-        if(movimentacaoDto.entrada_saida){
-            data['entrada_saida'] = movimentacaoDto.entrada_saida
+        if(movimentacaoDto.entrada){
+            data['entrada'] = movimentacaoDto.entrada
+        }
+
+        if(movimentacaoDto.saida){
+            data['saida'] = movimentacaoDto.saida
         }
 
         if(movimentacaoDto.conta){

@@ -109,7 +109,8 @@ export class WhatsappService {
 
           movimentacao = await this.prisma.movimentacao.create({
             data: {
-              entrada_saida: dadosReconhecidos.entrada ? 'Entrada' : 'Saida',
+              entrada: dadosReconhecidos.entrada,
+              saida: dadosReconhecidos.saida,
               conta: "geral",
               valor:dadosReconhecidos.valor,
               categoria: dadosReconhecidos.categoria,

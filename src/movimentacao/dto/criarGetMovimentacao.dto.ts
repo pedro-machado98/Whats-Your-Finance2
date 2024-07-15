@@ -1,16 +1,22 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { Categoria } from '@prisma/client';
-import { IsEmail, IsNotEmpty, IsNumber, IsString } from 'class-validator';
+import { IsBoolean, IsEmail, IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 export class CriarGetMovimentacaoDTO {
 
-    @IsString()
-    @IsNotEmpty()
+    @IsBoolean()
     @ApiPropertyOptional({
-      type: String,
+      type: Boolean,
       description: "Obrigatorio"
     })
-    entrada_saida: string;
+    entrada: boolean;
+
+    @IsBoolean()
+    @ApiPropertyOptional({
+      type: Boolean,
+      description: "Obrigatorio"
+    })
+    saida: boolean;
   
     @IsString()
     @ApiPropertyOptional({
