@@ -35,7 +35,8 @@ model Movimentacao {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  entrada_saida String
+  entrada Boolean
+  saida Boolean
   conta String?
   valor Float
   categoria Categoria @default(GERAL)
@@ -56,3 +57,4 @@ enum Categoria {
   DESPESAS_PESSOAIS
   ECONOMIAS
 }
+

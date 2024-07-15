@@ -9,6 +9,7 @@ import { NlpModule } from './nlp/nlp.module';
 import { PrismaModule } from './prisma/prisma.module';
 import { UserModule } from './user/user.module';
 import { WhatsappModule } from './whatsapp/whatsapp.module';
+import { GeminiModule } from './gemini/gemini.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { WhatsappModule } from './whatsapp/whatsapp.module';
     WhatsappModule,
     NlpModule,
     MovimentacaoModule,
+    GeminiModule,
   ],
   controllers: [AppController],
   providers: [AppService],
