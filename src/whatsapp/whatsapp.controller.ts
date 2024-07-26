@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Req, Res } from '@nestjs/common';
+import { Controller, Get, HttpStatus, Post, Req, Res } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { Request, Response } from 'express';
 
@@ -20,6 +20,10 @@ export class WhatsappController {
 
   @Post('webhook')
   recebeERetornaMensagem( @Req() req: Request, @Res() res: Response) {
+
+    if (!Object.keys(req.body).length) {
+      return res.status(HttpStatus.NO_CONTENT).send()
+    }
     return this.whatsappService.processaMensagem(
       req,
       res,

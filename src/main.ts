@@ -33,6 +33,6 @@ async function bootstrap() {
   // Swagger path: http://localhost:3200/api/docs
   SwaggerModule.setup(`${apiPath}/docs`, app, document);
 
-  await app.listen(3000);
+  await app.listen(3001);
 }
 bootstrap();

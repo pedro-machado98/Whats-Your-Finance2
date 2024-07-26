@@ -1,13 +1,13 @@
-import { GeminiService } from './../gemini/gemini.service';
 import { HttpService } from '@nestjs/axios';
 import { HttpStatus, Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { Movimentacao } from '@prisma/client';
 import { Request, Response } from 'express';
 import { lastValueFrom } from 'rxjs';
 
 import { NlpService } from '../nlp/nlp.service';
 import { PrismaService } from '../prisma/prisma.service';
-import { Movimentacao } from '@prisma/client';
+import { GeminiService } from './../gemini/gemini.service';
 
 @Injectable()
 export class WhatsappService {
@@ -47,7 +47,6 @@ export class WhatsappService {
     const body = req.body;
     let movimentacao: Movimentacao;
 
-    console.log(url)
 
 
     if(body.dataType ==  'message' && body.data.message.id.remote.length < 20) {
@@ -73,6 +72,9 @@ export class WhatsappService {
             content: `Você não está cadastrado na nossa aplicação Whats Your Finance.\nPor favor, cadastre-se pelo nosso app.Você pode baixa-lo no nosso site abaixo.\nhttps://whats-your-finances-web-page.vercel.app/`
           }
 
+        console.log(url)
+        console.log(data)
+
         try { 
           await lastValueFrom(this.httpService.post(url,data))
           return
@@ -83,6 +85,7 @@ export class WhatsappService {
 
 
       try {
+        console.log('chegou aqui')
         var dadosReconhecidos = await this.geminiService.getResponseTextFromGemini(message)
     
           if(!dadosReconhecidos.entrada && !dadosReconhecidos.saida) {
@@ -132,7 +135,7 @@ export class WhatsappService {
       }
       
     }
-    // res.status(HttpStatus.CREATED).send()
+    res.status(HttpStatus.BAD_REQUEST).send()
   }
 
   async confirmaNumeroCliente(numeroTelefone: string) {
